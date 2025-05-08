@@ -1,0 +1,372 @@
+<!--ユーテックを知る-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Yutech Recruitsite</title>
+  <meta name="viewport" content="width=device-width">
+  <!--ハンバーガーメニュー設定（JS)-->
+  <script src="../js/toggle-menu.js" defer></script>
+  <link href="../css/common.css" rel="stylesheet">
+  <link href="../css/aboutus.css" rel="stylesheet">
+  
+</head>
+
+<body>
+  <!--ここからheader-->
+  <header class="header">
+    <div class="header-inner">
+      <div class="header-left">
+        <a class="header-logo" href="top.html">
+          <img src="../images/logo.svg">
+        </a>  
+      </div>
+  
+      <!--ヘッダー右側部分-->
+      <nav class="header-right">
+        <!--PC版メニュー表示-->
+
+
+        <div class="button-area"><!--エントリーボタン-->
+          <a class="header-entry-button" href="/html/entry.html">ENTRY</a>
+        </div>
+        
+        <div class="menu-button">
+          <button id="menu-open" class="btn-menu">
+          </button>
+  
+          <!--ハンバーガーメニュー設定-->
+          <div id="menu-panel">
+            <button id="menu-close" class="btn-menu"></button>
+            <ul class="menu-list">
+              <li><a href="../html/aboutus.html">ユーテックについて</a></li>
+              <li><a href="../html/environment.html">働く環境</a></li>
+              <li><a href="../html/data.html">データで見るユーテック</a></li>
+              <li><a href="../html/employee-top.html">社員インタビュー</a> </li>
+              <li><a href="../html/voice.html">気になるホンネ</a></li>
+              <li><a href="../html/recruit-message.html">採用メッセージ</a></li>
+              <li><a href="../html/entry-guide.html">選考案内</a></li>
+              <li><a href="../html/entry-guide.html">エントリー</a> </li>
+            </ul>
+          </div>
+        </div>
+  
+      </nav>
+    </div>
+  </header>
+  <!--ここまでheader-->
+
+  <!--ここからmain-->
+  
+    <!--ABOUTUSトップ画面-->
+<main class="main">
+      <div class="content-top-area">
+        <img src="../images/aboutus/top3.jpg">
+        <div class="content-top-title">
+          <h2>ABOUT US</h2>
+          <h1>ユーテックは、<br>
+            豊富な事例と小回りの利くサービスで<br>
+            お客様企業の能力アップを支援します</h1>
+        </div>
+      </div>
+
+  <div class="aboutus">
+          <!--設立-->
+    <div class="construction">
+      <h3>設立</h3>
+      <div class="construction-inside">
+        <p>
+          情報システムは、仕事を効率化するもの。
+          私が駆け出しのエンジニアの時は、ただそう思っていました。しかし、
+          数多くのプロジェクトを経験していく中で、創造のしていない深く細かいところで
+          大きな価値を生み出していることに気づいた時、この仕事に引き込まれました。<br><br>
+  
+          お客様の「人を増やして、長く続けてほしい」という声に背中を押され、
+          7年前に法人化し、「既存事業の継続」「人材育成」「技術の継承」を
+          事業目的として掲げ、企業の土台作りを始めました。
+        </p>
+        <img src="../images/aboutus/officebuild.jpg" >
+      </div>
+    </div>
+
+    <!--いま-->
+    <div class="now">
+      <h3>いま</h3>
+
+      <!--CUSTOMER-->
+      <div class="customer">
+        <h4>CUSTOMER</h4>
+        <div class="customer-inside">
+          <h6>
+            ユーテックは、製造業に特化したシステム開発をしています。<br>
+            製造業向けの基幹システム開発は、昔からニーズがありながらも、現在もニーズを満たしきれていません。<br>
+            私たちは日本の製造業の足元を支え、考え抜かれた素晴らしい日本製品を守ります。
+          </h6>
+        </div>
+      </div>
+      <!--PRODUCT-->
+      <div class="product">
+        <h4>PRODUCTS</h4>
+        <div class="products">
+          <div class="product-center">
+            <p>業務の効率化・標準化を目指して</p>
+          </div>
+          <div class="product-lineup" id="package">
+            <h6>パッケージ製品</h6>
+            <div >
+              <button class="lineup-button js-modal-button1">
+                VIEW MORE
+              </button>
+            </div>
+          </div>
+          <div class="product-lineup" id="service">
+            <h6>システムエンジニアリングサービス</h6>
+            <div>
+              <button class="lineup-button js-modal-button2">
+                VIEW MORE
+              </button>
+            </div>
+          </div>
+          <div class="product-lineup" id="signage">
+            <h6>オフィスサイネージ</h6>
+            <div >
+              <button class="lineup-button js-modal-button3">
+              VIEW MORE
+              </button>
+            </div>
+          </div>
+          <div class="product-lineup" id="programming">
+            <h6>プログラム開発</h6>
+            <div >
+              <button class="lineup-button js-modal-button4">
+                VIEW MORE
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="layer js-modal1">
+          <div class="modal">
+            <div class="modal-inner">
+              <div class="modal-button-wrap">
+                <button class="close-button js-close-button1">
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
+              <div class="modal-contents">
+                <div class="modal-content">
+                  <p class="content-title">パッケージ製品とは</p>
+                  <p class="content-text">
+                    すでに出来上がっているソフトウェアを販売します。インターネットで申し込んで使うクラウドサービスや、ダウンロードして購入するソフトウェアが近いです。<br>
+                    <br>
+                    製品企画力・開発力が必要なのはもちろん、特に重要なのは営業力です。自社で開発したソフトウェアをインターネットで販売したり、代理店を通して販売する会社もあれば
+                    他社が開発したソフトウェアを仕入れて販売する会社もあります。<br>
+                    <br>
+                    ユーテックにおいては、お客様の業界の特性上、お客様に合わせて柔軟なカスタマイズができること、
+                    小回りの利くサービスが可能であることが必要だと考えているため、自社開発・直接販売を基本としています。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="layer js-modal2">
+          <div class="modal">
+            <div class="modal-inner">
+              <div class="modal-button-wrap">
+                <button class="close-button js-close-button2">
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
+              <div class="modal-contents">
+                <div class="modal-content">
+                  <p class="content-title">システムエンジニアリングサービスとは</p>
+                  <p class="content-text">
+                    特定のお客様に対し、技術やスキルを提供するサービスです。多くのソフトウェア会社が客先常駐型でサービス提供をしていますが、
+                    ユーテックでは現状、自社オフィスからリモートで打ち合わせを実施し、必要に応じて出張する形態をとっています。どのような技術やスキルを提供するかによって、いろんな仕事の形態があります。<br>
+                    <br>
+                    ユーテックにおいては、上流工程と呼ばれる「要件定義」や「基本設計」を任されることが多いです。工程が上流になるほど、技術的な知識や経験、業務知識、ビジネス上のコミュニケーションが重要になります。
+                    システムエンジニアリングサービスとは、ビジネス上の課題を解決するためにどんなものを作ったらよいのか、決めていく過程をお手伝いするサービスです。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="layer js-modal3">
+          <div class="modal">
+            <div class="modal-inner">
+              <div class="modal-button-wrap">
+                <button class="close-button js-close-button3">
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
+              <div class="modal-contents">
+                <div class="modal-content">
+                  <p class="content-title">オフィスサイネージとは</p>
+                  <p class="content-text">
+                    広告業界においては「電子看板 」を意味する「デジタルサイネージ」という市場があり、街を歩けば誰でも、ディスプレイを使った広告を目にするようになりましたが、
+                    同様の技術をオフィス内の情報共有に利用する分野が「オフィスサイネージ」です。<br>
+                    <br>
+                    製造業においては、以前から「見える化」が大切と言われてきましたが、見える化とオフィスサイネージの相性がよく、最近力を入れている分野です。
+                    「見える化」で大切なのは、品質問題や事故、クレームや不良、案件の失注など、現場で起きている問題を「見よう」としなければわからないのではなく、本来見せたくない情報を見えるようにして、
+                    組織で共有し、現場が自律的に問題を解決するための企業努力です。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="layer js-modal4">
+          <div class="modal">
+            <div class="modal-inner">
+              <div class="modal-button-wrap">
+                <button class="close-button js-close-button4">
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
+              <div class="modal-contents">
+                <div class="modal-content">
+                  <p class="content-title">プログラム開発とは</p>
+                  <p class="content-text">
+                    「開発」とは、新しいものを作り出して実用化する際に使われる言葉ですが、ソフトウェア業界においては「製造」に近い仕事です。
+                    上流工程で決めた使用をもとに、実際に動くプログラムを完成させるための費用を見積り、お客様から注文をもらって、約束の期日までに仕上げます。<br>
+                    <br>
+                    一見、ルーチンワークのように聞こえるかもしれませんが、プログラムの構造やアルゴリズム、共通化などの選択肢がいくつもあり、非常にクリエイティブな仕事です。
+                    趣味の延長で「とりあえず動くもの」を作るのは企画的簡単ですが、ビジネスの中核を担う仕組みとして安定して長く使ってもらえるように、「誰が見てもわかるコード」
+                    「変更に強いコード」「バグを作りにくいコード」を日々追及していきます。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          <!--BUSINESS MODEL-->
+    <div class="business-model">
+      <h2>BUSINESS MODEL</h2>
+      <div class="business-model-contents"></div>
+    </div>
+    <!--BUSINESS MODEL-->
+    </div>
+    <!--いま-->
+    
+
+
+    <!--これから-->
+    <div class="from-now">
+      <h3>これから</h3>
+      <h2>STRUCTURE</h2>
+      <div class="from-now-text">
+        <p>
+          近年、上流工程と呼ばれる調査・分析から携わり、解決策の立案・設計・開発・保守まで、
+          一貫してお客様をサポートするソリューションビジネス事業と、業界共通の汎用的な
+          ソフトウェアを迅速に提供するパッケージソフトウェア事業が、共に市場から評価され、
+          事業規模拡大のステージに入りつつあります。<br><br>
+  
+          安定した成長を実現するため、事業活動全般にわたり組織手的な活動ができるような組織
+          づくりを目指します。<br><br>
+  
+          目まぐるしく変化する事業環境の中で、経営方針である<span>「お客様第一主義」</span>を徹底し、
+          お客様企業へのツール提供や課題解決を通じて、競争力の源泉に関わる、欠かせない
+          ビジネスパートナーとして選んでいただけるよう、企業及び人材の価値向上に努めてまいります。
+        </p>
+      </div>
+      <div class="from-now-contents">
+        <div class="from-now-content">
+          <img src="../images/aboutus/structure/meeting2.png.png">
+          <p>販売促進</p>
+        </div>
+
+        <div class="from-now-content">
+          <img src="../images/photo-square.JPG">
+          <p>受注活動</p>
+        </div>
+
+        <div class="from-now-content">
+          <img src="../images/photo-square.JPG">
+          <p>プロジェクト管理</p>
+        </div>
+  
+        <div class="from-now-content">
+          <img src="../images/photo-square.JPG">
+          <p>IT技術習得</p>
+        </div>
+  
+        <div class="from-now-content">
+          <img src="../images/photo-square.JPG">
+          <p>顧客対応</p>
+        </div>
+  
+        <div class="from-now-content">
+          <img src="../images/photo-square.JPG">
+          <p>保守対応</p>
+        </div>
+  
+        <div class="from-now-content">
+          <img src="../images/photo-square.JPG">
+          <p>採用活動</p>
+        </div>
+  
+        <div class="from-now-content">
+          <img src="../images/photo-square.JPG">
+          <p>人材育成</p>
+        </div>
+  
+        <div class="from-now-content">
+          <img src="../images/photo-square.JPG">
+          <p>バックオフィス業務</p>
+        </div>
+      </div>
+
+    </div>
+    <!--これから-->
+  </div>
+    <!--エントリーボタン-->
+    <div class="newbutton" id="entrybutton">
+      <a href="../html/entry.html">エントリーはこちら</a>
+    </div>
+</main>
+  <!--ここまでmain-->
+
+  <!--ここからfooter-->
+  <footer class="footer">
+    <div class="footer-address">
+  <img class="footer-logo" src="../images/logo_white.svg">
+  <div class="address">
+    <ul>
+      <li>〒980-0802</li>
+      <li>仙台市青葉区二日町13-18 ステーションプラザビル5F</li>
+      <li>TEL 022-302-5873</li>
+      <li>採用問い合わせ　ーーーーーー</li>
+    </ul>
+  </div>
+</div>
+<div class="footer-menu">
+  <ul class="footer-site-menu">
+    <li><a href="../html/top.html">TOP</a></li>
+    <li><a href="../html/aboutus.html">ユーテックについて</a></li>
+    <li><a href="../html/environment.html">働く環境</a></li>
+    <li><a href="../html/data.html">データで見るユーテック</a></li>
+  </ul>
+  <ul class="footer-site-menu-2">
+    <li><a href="../html/employee-top.html">社員の声</a></li>
+    <li><a href="../html/voice.html">気になるホンネ</a></li>
+    <li><a href="../html/recruit-message.html">採用メッセージ</a></li>
+    <li><a href="../html/entry-guide.html">選考案内</a></li>
+  </ul>
+</div>
+
+
+</footer>
+<!--ここまでfooter-->
+<script src="../js/aboutus.js"></script>
+</body>
+
+</html>

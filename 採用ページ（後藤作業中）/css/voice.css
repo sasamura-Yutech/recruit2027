@@ -1,0 +1,149 @@
+/* ここから本文 */
+
+.sub-title{
+    margin:50px 30px 50px 30px;
+    text-align: center;
+    font-size: 1.3vw;
+    line-height: 2;
+    letter-spacing: -1;
+}
+.accordion{
+    width: 70%;
+    margin: auto;
+}
+.accordion-trigger-box{
+    width: 85%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;   
+    border-top: 1px solid#ccc; 
+    text-decoration: none;
+    color: rgb(82, 82, 82);
+    position: relative;
+}
+.accordion-trigger{
+    text-align: center;
+    font-size: 2.4vw;
+    font-weight: bold;
+    display:block;
+    padding: 0 20px 0px 0px;
+    margin: 20px auto 20px auto;   
+}
+.accordion-content{
+    padding-left: 10vw;
+    padding-right: 10vw;
+    font-size: 1vw;
+}
+.button-wrap{
+    position: absolute;
+    top:15%;
+    left:100%;
+    width: 50px;
+    height: 50px; 
+}
+.symbol span{
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    display: inline-block;
+    background-color: #505050;
+    width: 2vw;
+    height: 2px;
+    transition: all 0.4s ease;
+}
+.symbol span:nth-of-type(1){
+    transform: rotate(0deg) ;
+}
+.symbol span:nth-of-type(2){
+    transform: rotate(90deg);
+}
+.active .symbol  span:nth-of-type(2) {
+    transform: rotate(0deg);
+}
+.font-blue{
+    color: rgb(3, 136, 202);
+}
+.accordion-contents{
+    padding: 40px;
+    display: none; 
+    line-height: 2;
+}
+.top-content{
+    display: block;
+    margin: 0px 20px 30px 20px;
+}
+.comment{
+    display: flex;
+    width: 600px;
+    height: 150px;
+    margin: 0 auto;
+}
+.interviewer{
+    margin: auto 10px;
+}
+/* .comment-frame{ */
+    /* transform: scale(-1,1); */
+/* } */
+.comment-text{ 
+    font-size: 14px; 
+    display: block; 
+    width: 440px; 
+    margin: auto auto auto 30px;  
+}
+footer{
+    margin-top: 100px;
+}
+/* ここまで本文 */
+
+/* モバイル用レイアウト */
+@media(max-width:800px){
+    .sub-title{
+      margin-top: 50px;
+      margin-bottom: 50px;
+      text-align: center;
+      font-size: 4vw;
+      line-height: 2;
+      letter-spacing: -1;
+    }
+    .accordion{
+        width: 95%;
+        }
+    .accordion-trigger-box{
+        display: flex;  
+        padding-right: 19px; 
+        border-top: 1px solid#ccc; 
+        text-decoration: none;
+        color: rgb(82, 82, 82);
+        margin-bottom: 2vh;
+        margin-top: 2vh;
+        position: relative;
+        width: 80%;
+    }
+    .accordion-trigger{
+        text-align: center;
+        font-size: 5vw;
+        font-weight: bold;
+        display:block;
+        padding: 0 auto;
+        margin: 20px auto 20px auto;
+    }
+    .symbol span{
+        position: absolute;
+        top: 50%;
+        right:-5%;
+        display: inline-block;
+        background-color: #505050;
+        width: 3vw;
+        height: 1px;
+        transition: all 0.4s ease;
+    }
+    .accordion-contents{
+        padding: 10px;
+        display: none; 
+        line-height: 2;
+    }
+    .accordion-content{
+        font-size: 3.5vw;
+    }
+    
+}

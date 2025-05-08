@@ -1,0 +1,178 @@
+@charset "utf-8";
+/*採用メッセージ*/
+/*トップ画像部分*/
+.content-top-area img{
+    object-position: 50% 30%;
+}
+
+/*代表メッセージ*/
+.mobile-title{
+    display: none;
+}
+.content-1{
+    display: flex;
+    margin-top: 20%;
+    margin-bottom: 200px;
+
+}
+.img-sticky{
+    width: 45%;
+    padding-left: 3%;
+    padding-right: 3%;
+    img{
+        width: 90%;
+        aspect-ratio: 5/7;
+        border-radius: 15px;
+        position: sticky;
+        top: 150px;
+    }
+}
+
+.message-right{
+    width: 55%;
+    h4{
+        font-size: 25px;
+        margin-bottom: 50px;
+        border-left: 5px solid #000000;
+        padding: 4px 0 7px 7px;
+    }
+    h3{
+        font-size: 1.6vw;
+        padding-right: 50px;
+        padding-bottom: 30px;
+        line-height: 1.4;
+    }
+    p{
+        font-size: 1.1vw;
+        line-height: 1.6;
+        margin-bottom: 50px;
+        margin-right: 5%;
+    }
+    h5{
+        font-size: 23px;
+        margin-bottom: 10px;
+    }
+    h6{
+        font-size: 17px;
+        font-weight: normal;
+        margin-bottom: 30px;
+    }
+    span{
+        font-size: 15px;
+    }
+}
+
+
+/*求める人物像*/
+.content-2{
+    h4{
+        font-size: 25px;
+        margin-bottom: 50px;
+        margin-left: 100px;
+        border-left: 5px solid #000000;
+        padding: 4px 0 7px 7px;
+    }
+}
+.figure{
+    display: flex;
+    margin-bottom: 70px;
+    img{
+        width: 12vw;
+        aspect-ratio: 1/1;
+    }
+}
+
+.figure-right{
+    margin-left: 30px;
+    span{
+        font-size: 30px;
+        color: red;
+    }
+    h3{
+        font-weight: normal;
+        font-size: 1.8vw;
+        margin-bottom: 30px;
+        text-decoration: underline;
+    }
+    span{font-size: 2.2vw;}
+    p{
+        font-size: 1.4vw;
+        padding-left: 4%;
+        padding-right: 4%;
+        line-height: 1.3;
+    }
+}
+.content2-inside{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/*モバイルレイアウト*/
+@media(max-width: 800px){
+    /*代表メッセージ*/
+    .mobile-title{
+        display: block;
+        margin-bottom: 3%;
+        margin-right: auto;
+        margin-left: 5%;
+        text-align: center;
+        border-left: 4px solid #000000;
+        padding: 3px 5px;
+
+    }
+    .content-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .message-right{
+        width: 80%;
+        h4{display: none;}
+        h3{display: none;}
+        p{
+            font-size: 14px;
+            margin-right: 0;
+        }
+    }
+    .img-sticky{
+        width: 80%;
+        padding: 0;
+        img{
+            width: 100%;
+            aspect-ratio: 5/3;
+            object-fit: cover;
+            margin-bottom: 3%;
+            
+        }
+    }
+    /*求める人物像*/
+    .figure img{
+        width: 17%;
+        height: 17%;
+        aspect-ratio: 1/1;
+    }
+    .figure-right{
+        margin-left: 1%;
+        span{
+            font-size: 3vw;
+        }
+        h3{
+            font-size: 2.7vw;
+            margin-bottom: 3%;
+        }
+        p{
+            font-size: 2.6vw;
+        }
+    }
+    .content-2{
+        h4{
+            margin-left: 5%;
+            margin-right: auto;
+        }
+    }
+    .content2-inside{
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    
+}

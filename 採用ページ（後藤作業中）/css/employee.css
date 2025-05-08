@@ -1,0 +1,157 @@
+/* ここから本文 */
+body{
+  padding-top: 150px;
+}
+h1{
+    text-align: center;
+}
+section{
+  width: 800px;
+  margin: 120 auto;
+}
+
+
+/* ここから社員プロフィール */
+.profile{
+    display: flex;
+    width: 600px;
+    margin: 20 auto;
+}
+.profile img{
+  width: 200px;
+  height: 240px; 
+  object-fit: cover;
+  margin: auto 10px 10px auto
+}
+.profile-figcaption{
+    margin: auto auto 0 20px;
+}
+/* ここまで社員プロフィール */
+
+/* ここからスキップボタン */
+.skipbutton{ 
+  width: 800px;
+  text-align: center;
+  margin:0 auto 0px auto;
+}
+.page{
+  width: 300;
+  padding: 10;
+  margin: 5;
+}
+/* ここまでスキップボタン */
+figcaption{
+  line-height: 2;
+  letter-spacing: -1;
+}
+.tab-nav{
+  justify-content: space-between;
+  display: flex;
+}
+.tab-nav-item{
+  color: #ffffff;
+  background-color: #575757;
+  text-decoration: none;
+  width: 100%;
+  margin-right: 2px;
+  text-align: center;
+  padding: 20px 0;
+}
+.tab-nav-item.is-active {
+  color: #ffffff;
+  background-color: #000000;
+}
+.tab-contents-item{
+  display: none;
+  margin-top:40;
+}
+.tab-contents{
+  margin: 0 50px;
+}
+.tab-contents-caption{
+  display: flex;
+  height: 220;
+  margin: 0 auto;
+}
+.tab-contents-caption img{
+  border-radius: 40%;
+}
+.tab-figcaption{
+  margin: auto auto 0 20;
+}
+.img-schedule{
+  display: block;
+  width: 100%;
+  margin:20px auto; 
+}
+.img-section{
+  object-fit: cover;
+  width: 80%;
+  height: 30vw;
+  object-position:20% 40%;
+  display:block ;
+  margin: auto;
+}
+.work,.reason,.schedule,.discovery{
+  padding-bottom: 10px;
+  margin-bottom: 20;
+  text-align: center;
+  border-bottom: 1px solid #575757 ;
+}
+.reason-figure{
+  display: flex;
+  margin: 0 50;
+}
+.discovery-figure{
+  display: flex;
+  margin: 0 50;
+}
+.employee-list{
+  display: block;
+  text-align: center;
+  width: 200px;
+  margin: 80px auto ;
+  font-weight: bold;
+  background-color: rgb(127, 127, 127);
+  padding: 20px;
+}
+
+/* ここまで本文 */
+@media(max-width:800px){
+  .section{
+    width: 95%;
+    h2{
+      font-size: 2vw;
+    }
+  }
+  .profile{
+    display: flex;
+    margin: 10 auto;
+  }
+  .skipbutton{ 
+    width: 95%;
+    font-size: 1vw;
+    text-align: center;
+    margin:0 auto 0px auto;
+  }
+.profile img{
+  width: 200px;
+  height: 240px; 
+  object-fit: cover;
+  margin: auto 10px 10px auto
+}
+.profile-figcaption{
+    margin: auto auto 0 20px;
+}
+  
+  .figcaption{
+    font-size: 0.7vw;
+  }
+  .figcaption-single{
+    font-size: 0.7vw;
+  }
+  .tab-contents-caption img{
+      display: none;
+  }
+}
+

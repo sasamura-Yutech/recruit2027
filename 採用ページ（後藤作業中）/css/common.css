@@ -1,0 +1,351 @@
+/*#0c4469←ベースカラー*/
+
+@charset "utf-8";
+/*各コンテンツタイトル部分の設定*/
+.content-top-area{
+  position: relative;
+  img{
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+  }
+
+}
+.content-top-title{
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+  padding: 40px 70px 40px 50px;
+  h2{
+    font-weight: lighter;
+    margin-bottom: 5px;
+}
+h1{
+    margin-left: 20px;
+    font-size: 40px;
+}
+}
+
+
+/*初期設定のpadding、marginの取り消し*/
+*,
+::before,
+::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li
+{
+  list-style: none;
+}
+
+/*header、footerを最前面に配置*/
+.header{
+  z-index: 10;
+}
+.footer{
+  z-index: 10;
+}
+/*リンクの下線、色変化の消去*/
+a{
+  color: inherit;
+  text-decoration: none;
+}
+/*デフォルト設定*/
+body{
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #000000;
+  line-height: 1;
+  background-color: #ffffff;
+}
+img{max-width: 100%;}
+
+/*headerの設定*/
+.header-inner{
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-left{
+  display: flex;
+  align-items: center;
+}
+.header-right{
+  display: flex;
+  align-items: center;
+}
+p.header-recruit{width: 10px;}
+
+.header-menu ul{
+  display: flex;
+  font-size: 13px;
+  li{margin: 5px;}
+}
+
+
+/*ヘッダーエントリーボタン*/
+.button-area{
+  text-align: center;
+}
+
+.header-entry-button{
+  display: block;
+  font-size: 15px;
+  width: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 7px;
+  border-radius: 5px;
+  background-color: #004879;
+  color: #ffffff;
+  font-weight: 600;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.button-area a{
+  transition: all .5s;
+  border: 1px solid #0c4469;
+  display: inline-block;
+  position: relative;
+}
+.button-area a::before{
+  border-right: 2px solid #fff;
+  border-top: 2px solid #fff;
+  bottom: 0;
+  content: "";
+  height: 10px;
+  margin: auto;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  transform: rotate(45deg);
+  transition: all .5s;
+  width: 10px;
+}
+
+.button-area a:hover{
+  background-color: #fff;
+  color: #0c4469;
+}
+.button-area a:hover::before{
+  border-right: 3px solid #0c4469;
+  border-top: 3px solid #0c4469;
+}
+.menu-button{
+  margin-left: 20px;
+}
+
+/*headerの設定*/
+
+/*footerの設定*/
+.address{
+  line-height: 1.3;
+}
+.footer-menu{
+  display: flex;
+  align-items: end;
+  line-height: 1.7;
+  font-size: 17px;
+}
+.footer-site-menu{
+  margin-right: 30px;
+}
+.footer{
+  color: #fff;
+  background-color: #0c4469; /*←ベースカラーこれに決定*/
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.address{
+  margin-left: 30px;
+}
+/*footerの設定*/
+
+/*ハンバーガーメニュー（開くボタン）*/
+#menu-open{
+  display: block;
+  width: 44px;
+  height: 34px;
+  background-image: url(../images/icon-menu.png);
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*ハンバーガーメニュー（閉じるボタン）*/
+#menu-close{
+  margin-right: 10px;
+  margin-left: auto;
+  margin-top: 2.7vw;
+  display: block;
+  width: 44px;
+  height: 34px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+
+}
+#menu-close::before, #menu-close::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 3px;
+  height: 20px;
+  background: #333;
+}
+
+#menu-close::before {
+  transform: translate(-50%,-50%) rotate(45deg);
+}
+ 
+#menu-close::after {
+  transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+#menu-panel{
+  color: #fff;
+  font-weight: 600;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 4;
+  width: max(32vw, 20rem);
+  height: 100vh;
+  background-color: #004879;/*←開いたメニューの背景色設定*/
+  translate: 100vw;
+  box-shadow: -4px 0px 3px 0px rgba(0, 0, 0, 0.7);
+
+}
+
+.menu-list li{
+  margin-left: 20px;
+  margin-bottom: 50px;
+}
+.menu-list{
+  margin-top: 20px;
+}
+
+/*エントリーボタン*/
+#entrybutton a{
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 350px;
+  height: 60px;
+}
+
+
+.newbutton a {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 200px;
+  padding: 10px 25px;
+  color: #313131;
+  transition: 0.3s ease-in-out;
+  font-weight: 600;
+}
+.newbutton a:before,
+.newbutton a:after {
+content: '';
+width: 18px;
+height: 18px;
+border-color: #6bb6ff;
+box-sizing: border-box;
+border-style :solid;
+display: block;
+position: absolute;
+transition: all 0.3s ease-in-out;
+}
+.newbutton a:before {
+top: -6px;
+left: -6px;
+border-width: 2px 0 0 2px;
+z-index: 5;
+}
+.newbutton a:after {
+bottom: -6px;
+right: -6px;
+border-width: 0 2px 2px 0;
+}
+.newbutton a:hover:before,
+.newbutton a:hover:after {
+width: calc(100% + 12px);
+height: calc(100% + 12px);
+border-color: #6bb6ff;
+}
+.newbutton a:hover {
+color: #fff;
+background-color: #6bb6ff;
+border-color: #6bb6ff;
+}
+/*エントリーボタン*/
+
+/*モバイル用の画面レイアウト*/
+@media(max-width: 800px){
+  /*ヘッダー部分*/
+  .header-logo{
+    width: 60%;
+  }
+  /*ここまでヘッダー部分*/
+
+  /*コンテンツトップ部分*/
+  .content-top-area{
+    img{width: 100%;}
+  }
+  /*ここまでコンテンツトップ部分*/
+
+
+  /*フッター部分*/
+.footer{
+  font-size: 13px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.footer-menu{
+  font-size: 13px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+/*ここまでフッター部分*/
+/*各コンテンツタイトル部分*/
+.content-top-area{
+  img{
+    height: 30vh;
+  }
+}
+.content-top-title{
+  padding: 20px 20px 30px 30px;
+  h2{
+    font-size: 3vw;
+  }
+  h1{
+    font-size: 4.5vw;
+  }
+}
+/*ここまで各コンテンツタイトル部分*/
+}
+/*ここまでモバイル用の画面レイアウト*/
