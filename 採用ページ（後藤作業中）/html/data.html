@@ -39,7 +39,7 @@
           <div id="menu-panel">
             <button id="menu-close" class="btn-menu"></button>
             <ul class="menu-list">
-              <li><a href="../html/aboutus.html">ユーテックについて</a></li>
+              <li><a href="../html/aboutus.html">ユーテックを知る</a></li>
               <li><a href="../html/environment.html">働く環境</a></li>
               <li><a href="../html/data.html">データで見るユーテック</a></li>
               <li><a href="../html/employee-top.html">社員インタビュー</a> </li>
@@ -68,20 +68,22 @@
 
     <h5 class="data-title">企業情報</h5>
     <div class="data1">
-      <!--1・2行目-->
       <div class="data-flex">
+        <!--創立-->
         <div class="datalist">
           <h6>創立</h6>
           <img src="../images/data/data-since.jpeg">
-          <p><span>7</span>年</p><!--←2018年設立、一応確認-->
+          <p><span>7</span>年</p>
         </div>
 
+        <!--売上-->
         <div class="datalist">
           <h6>売上</h6>
           <img src="../images/data/data-sales.jpeg">
           <p><span>4717</span>万円</p>
         </div>
 
+        <!--社員1人あたり売上高-->
         <div class="datalist">
           <h6>社員1人あたり売上高</h6>
           <img src="../images/data/data-eachsales.jpeg">
@@ -89,6 +91,7 @@
         </div>
 
         <!--説明欄-->
+        <!--説明欄（創立）-->
         <div class="explanation">
           <button class="close-button" type="button"></button>
           <div class="explanation-inside">
@@ -100,6 +103,7 @@
           </div>
         </div>
 
+        <!--説明欄（売上）-->
         <div class="explanation">
           <button class="close-button" type="button"></button>
           <div class="explanation-inside">
@@ -112,6 +116,7 @@
           </div>
         </div>
 
+        <!--説明欄（社員1人あたり売上高）-->
         <div class="explanation">
           <button class="close-button" type="button"></button>
           <div class="explanation-inside">
@@ -125,12 +130,14 @@
         </div>
         <!--説明欄ここまで-->
 
+        <!--営業利益率-->
         <div class="datalist">
           <h6>営業利益率</h6>
           <img src="../images/data/data-profit.jpeg">
           <p><span>9.3</span>%</p>
         </div>
 
+        <!--保守ユーザ数-->
         <div class="datalist">
           <h6>保守ユーザ数</h6>
           <img src="../images/data/data-user.jpeg">
@@ -138,6 +145,7 @@
         </div>
 
         <!--説明欄-->
+        <!--説明欄（営業利益率）-->
         <div class="explanation">
           <button class="close-button" type="button"></button>
           <div class="explanation-inside">
@@ -150,6 +158,7 @@
           </div>
         </div>
 
+        <!--説明欄（保守ユーザ数）-->
         <div class="explanation">
           <button class="close-button" type="button"></button>
           <div class="explanation-inside">
@@ -166,33 +175,40 @@
       </div>
 
 
-      <!--3行目-->
+      <!--保守ユーザ地域-->
       <div class="datalist data-long" id="user-region">
-        <div class="data-long-left">
+        <div class="data-long-left" id="img-display1">
           <h6>保守ユーザ地域</h6>
           <img src="../images/data/circle-graph.jpg">
 
         </div>
         <div class="data-long-right">
           <div class="item">
-            <p id="item-top">東海<span>33%</span></p>
+            <p class="item-name">東海</p>
+            <p class="percent">33%</p>
           </div>
 
           <div class="item">
-            <p>東北<span>25%</span></p>
+            <p class="item-name">東北</p>
+            <p class="percent">25%</p>
           </div>
 
           <div class="item">
-            <p>関東<span>25%</span></p>
+            <p class="item-name">関東</p>
+            <p class="percent">25%</p>
           </div>
 
           <div class="item">
-            <p>近畿<span>17%</span></p>
+            <p class="item-name">近畿</p>
+            <p class="percent">17%</p>
           </div>
+
+
         </div>
       </div>
 
       <!--説明欄-->
+      <!--説明欄（保守ユーザ地域）-->
       <div class="explanation explanation-long">
         <button class="close-button" type="button"></button>
         <div class="explanation-inside long">
@@ -208,21 +224,24 @@
     <h5 class="data-title">働く人</h5>
     <div class="data1">
       <div class="data-flex">
+        <!--従業員数-->
         <div class="datalist">
           <h6>従業員数</h6>
           <img src="../images/data/data-employee-number.jpeg">
           <p><span>9</span>人</p>
         </div>
 
+        <!--男女比-->
         <div class="datalist">
           <h6>男女比</h6>
           <img src="../images/data/data-gender.jpeg">
           <div class="ratio">
-            <p>男性　女性</p>
-            <p><span>2：7</span></p>
+            <p class="ratio-type">男性　女性</p>
+            <p><span>2</span>：<span>7</span></p>
           </div>
         </div>
 
+        <!--平均年齢-->
         <div class="datalist">
           <h6>平均年齢</h6>
           <img src="../images/data/data-age.jpeg">
@@ -230,6 +249,7 @@
         </div>
 
         <!--説明欄ここから-->
+        <!--説明欄（従業員数）-->
         <div class="explanation">
           <button class="close-button" type="button"></button>
           <div class="explanation-inside">
@@ -242,17 +262,21 @@
           </div>
         </div>
 
+        <!--説明欄（男女比）-->
         <div class="explanation">
           <button class="close-button" type="button"></button>
           <div class="explanation-inside">
             <img src="../images/data/data-gender.jpeg">
             <div class="explanation-right">
               <h6>男女比： 2：8</h6>
-              <p>IT業界で女性が働くことに関して、あまりイメージが沸かないという方もいるのではないでしょうか。ユーテックでは自社で開発ができるため、男女問わず社員のライフスタイルに合わせた柔軟な働き方が可能です。また、実際に多くの女性社員が活躍しています。気になる方はインターンや会社訪問を通じて一度話を聞いてみてください。</p>
+              <p>
+                ユーテックでは自社で開発ができるため、男女問わず社員のライフスタイルに合わせた柔軟な働き方が可能です。また、実際に多くの女性社員が活躍しています。IT業界で働く女性のイメージがあまり浮かばないという方はインターンや会社訪問を通じて一度話を聞いてみてください。
+              </p>
             </div>
           </div>
         </div>
 
+        <!--説明欄（平均年齢）-->
         <div class="explanation">
           <button class="close-button" type="button"></button>
           <div class="explanation-inside">
@@ -267,23 +291,26 @@
         <!--説明欄ここまで-->
       </div>
 
+      <!--年代比率-->
       <div class="datalist data-long" id="age-ratio">
-        <div class="data-long-left">
+        <div class="data-long-left" id="img-display2">
           <h6>年代比率</h6>
-          <img src="../images/data/bar-graph.jpg">
-     
-       </div>
+          <img src="../images/data/bar-graph.png">
+        </div>
         <div class="data-long-right">
           <div class="item">
-            <p id="item-top">20代<span>56%</span></p>
+            <p class="item-name">20代</p>
+            <p class="percent">56%</p>
           </div>
 
           <div class="item">
-            <p>40代<span>11%</span></p>
+            <p class="item-name">40代</p>
+            <p class="percent">11%</p>
           </div>
 
           <div class="item">
-            <p>50代<span>33%</span></p>
+            <p class="item-name">50代</p>
+            <p class="percent">33%</p>
           </div>
 
         </div>
@@ -291,6 +318,7 @@
       </div>
 
       <!--説明欄-->
+      <!--説明欄（年代比率）-->
       <div class="explanation explanation-long">
         <button class="close-button" type="button"></button>
         <div class="explanation-inside long">
@@ -305,14 +333,17 @@
 
       <div class="data-flex">
 
+        <!--文系・理系の割合-->
         <div class="datalist">
           <h6>文系・理系の割合</h6>
           <img src="../images/data/data-academy.jpeg">
           <div class="ratio">
-            <p>文系　　　　　理系</p>
+            <p class="ratio-type">文系　　理系</p>
             <p><span>83.3</span>%　<span>16.7</span>%</p>
           </div>
         </div>
+
+        <!--情報系の学部出身者-->
         <div class="datalist">
           <h6>情報系の学部出身者</h6>
           <img src="../images/data/data-information-science.jpeg">
@@ -320,6 +351,7 @@
         </div>
 
         <!--説明欄-->
+        <!--説明欄（文系・理系の割合）-->
         <div class="explanation">
           <button class="close-button" type="button"></button>
           <div class="explanation-inside">
@@ -331,13 +363,16 @@
           </div>
         </div>
 
+        <!--説明欄（情報系の学部出身者）-->
         <div class="explanation">
           <button class="close-button" type="button"></button>
           <div class="explanation-inside">
             <img src="../images/data/data-information-science.jpeg">
             <div class="explanation-right">
               <h6>情報系の学部出身者：0%</h6>
-              <p>ユーテックは、情報系以外の学部出身者も積極的に採用しています。お客様とのやり取りが中心となる上流工程を付加価値の高いものとして重要視しているためです。情報系の分野に知識の偏りがないことは、上流工程においてシステムのことをよく知らないお客様と同じ目線に立って考え、お客様が本当に求めていることを聞き出しやすい点で大きな強みとなります。</p>
+              <p>
+                情報系以外の学部出身者も積極的に採用しています。情報系の分野に知識の偏りがないことは、お客様とのやり取りが中心の上流工程において、システムのことをよく知らないお客様と同じ目線に立って考えることができる点で大きな強みとなります。
+              </p>
             </div>
           </div>
         </div>
@@ -349,18 +384,21 @@
     <h5 class="data-title">働き方</h5>
     <div class="data1" id="third-data">
       <div class="data-flex">
+        <!--年間休日-->
         <div class="datalist">
           <h6>年間休日</h6>
           <img src="../images/data/data-holiday.jpeg">
           <p><span>127</span>日</p>
         </div>
 
+        <!--有休取得率-->
         <div class="datalist">
           <h6>有休取得率</h6>
           <img src="../images/data/data-paid-holiday.jpeg">
           <p><span>63.6</span>%</p>
         </div>
 
+        <!--月平均残業時間-->
         <div class="datalist">
           <h6>月平均残業時間</h6>
           <img src="../images/data/data-overtime.jpeg">
@@ -398,7 +436,8 @@
             <img src="../images/data/data-overtime.jpeg">
             <div class="explanation-right">
               <h6>月平均残業時間：1.24時間</h6>
-              <p>入社1～2年目の社員は、基本的にあまり残業をしていません。それ以降においても相談しながら進めていきます。休みを取るために前倒しで仕事を進める、いいものを作れそうだから没頭したいなど、前向きな残業が中心です。</p>
+              <p>入社1～2年目の社員は、基本的にあまり残業をしていません。それ以降においても相談しながら進めていきます。休みを取るために前倒しで仕事を進める、いいものを作れそうだから没頭したいなど、前向きな残業が中心です。
+              </p>
               <p class="time">2023年4月～2024年3月実績</p>
             </div>
           </div>
@@ -431,7 +470,7 @@
     <div class="footer-menu">
       <ul class="footer-site-menu">
         <li><a href="../html/top.html">TOP</a></li>
-        <li><a href="../html/aboutus.html">ユーテックについて</a></li>
+        <li><a href="../html/aboutus.html">ユーテックを知る</a></li>
         <li><a href="../html/environment.html">働く環境</a></li>
         <li><a href="../html/data.html">データで見るユーテック</a></li>
       </ul>

@@ -1,258 +1,305 @@
 @charset "utf-8";
-.data-title{
-    font-size: 25px;
-    margin-bottom: 20px;
-    border-left: 5px solid #000000;
-    padding: 4px 0 7px 7px;
-    margin-left: 15%;
-    margin-top: 100px;
+
+.data-title {
+  font-size: 25px;
+  margin-bottom: 20px;
+  border-left: 5px solid #000000;
+  padding: 4px 0 7px 7px;
+  margin-left: 15%;
+  margin-top: 100px;
 }
-#age-ratio{
-    margin-bottom: 40px;
+
+#age-ratio {
+  margin-bottom: 40px;
 }
-#third-data{
-    margin-bottom: 100px;
+
+#third-data {
+  margin-bottom: 100px;
 }
-.data1{
-    margin: 0 17%;
+
+.data1 {
+  margin: 0 17%;
 }
-.data-flex{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 40px 5%;
-    width: 100%;
+
+.data-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 40px 5%;
+  width: 100%;
 
 }
-.datalist{
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 4px;
-    box-shadow: 0px 3px 14px 0px rgba(0, 0, 0, 0.35);
-    padding: 7px;
-    flex-basis: 30%;
-    aspect-ratio: 1/1;
-    h6{
-        font-size: 1.5vw;
-    }
-    span{
-        font-size: 2vw;
-    }
-    p{
-        font-size: 1.5vw;
-        color: blue;
-        font-weight: bold;
-    }
-    img{
-        height: 45%;
-    }
+
+.datalist {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: 0px 3px 14px 0px rgba(0, 0, 0, 0.35);
+  padding: 7px;
+  flex-basis: 30%;
+  aspect-ratio: 1/1;
+
+  h6 {
+    font-size: 1.5vw;
+  }
+
+  span {
+    font-size: 2vw;
+  }
+
+  p {
+    font-size: 1.5vw;
+    color: blue;
+    font-weight: bold;
+  }
+
+  img {
+    height: 45%;
+  }
 
 }
+
 /*横長データ*/
-.data-long{
-    display: flex;
-    flex-direction: row;
-    aspect-ratio: 3/1;
-    gap: 0;
-    margin-top: 40px;
-    width: 100%;   
-    height: 5%;
-    border-radius: 4px;
-    box-shadow: 0px 3px 14px 0px rgba(0, 0, 0, 0.35);
-    h6{
-        font-size: 1.5vw
-    }
+.data-long {
+  gap: 0;
+  display: flex;
+  flex-direction: row;
+  aspect-ratio: 3/1;
+  justify-content: space-between;
+  margin-top: 40px;
+  width: 100%;
+  height: 5%;
+  border-radius: 4px;
+  box-shadow: 0px 3px 14px 0px rgba(0, 0, 0, 0.35);
+
+  h6 {
+    font-size: 1.5vw
+  }
 }
 
 .data-long-left{
-    flex-basis: 50%;
-    height: 100%;
-    img{
-        margin-left: auto;
-        margin-right: auto;
-        object-fit: contain;
-        width: 100%;
-        height: 90%;
-    }
+  height: 100%;
+  flex-basis: 50%;
+  img{
+    margin-left: auto;
+    padding-right: 10%;
+    height: 90%;
+    width: 100%;
+    aspect-ratio: 1/1;
+  object-fit: contain;}
 }
-.data-long-right{
-    flex-basis: 30%;
-    height: 70%;
+.data-long-right {
+  flex-basis: 30%;
+  height: 70%;
     margin-right: auto;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.item{
-    display: flex;
-    padding-right: 3%;
-    p{
-        font-size: 1.7vw;
-        border-bottom: 1px solid lightgray;
-        padding-bottom: 3px;
-    }
-    span{
-        font-size: 2vw;
-        font-weight: bold;
-        padding-left: 100px;
-    }
 
-}
+
 /*横長データ詳細設定（保守ユーザ地域）*/
-
-#item-top{
-    p{
-        font-size: 1.8vw;
-    }
-    span{
-        font-size: 2.1vw;
-    }
-    color: blue;
-    border-bottom: 1px solid blue;
+.item{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px #d3d3d3 solid;
+  padding-bottom: 3px;
+  p{  
+    vertical-align: text-bottom;
+    font-size: 1.7vw;}
 }
+
 
 /*男女比・文系/理系の割合の上文字部分*/
-.ratio{
-    p{
-        font-weight: normal;
-        text-align: center;
-        font-size: 1vw;
-    }
-    span{
-        font-weight: bold;
-    }
+.ratio {
+  p {
+    font-weight: normal;
+    text-align: center;
+    font-size: 1vw;
+  }
+
+  span {
+    font-weight: bold;
+  }
+}
+.datalist .ratio-type{
+  margin-bottom: 0;
+  font-size: 1vw;
 }
 
 
 /*説明欄*/
-.explanation{
-    width: 100%;
-    aspect-ratio: 4/1;
-    box-shadow: 0px 3px 14px 0px rgba(0, 0, 0, 0.35);
-    position: relative;
-    display: none;/*デフォルトは非表示*/
-    position: relative;
+.explanation {
+  width: 100%;
+  aspect-ratio: 4/1;
+  box-shadow: 0px 3px 14px 0px rgba(0, 0, 0, 0.35);
+  position: relative;
+  display: none;
+  /*デフォルトは非表示*/
+  position: relative;
 }
-.explanation-long{
-    margin-top: 40px;
-    margin-bottom: 40px;
+
+.explanation-long {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
-.long{
-    flex-direction: column;
+
+.long {
+  flex-direction: column;
 }
-.explanation-inside{
-    display: flex;
-    padding: 0 3% 3% 3%;
-    height: 100%;
-    img{
-        padding: 20px;
-        aspect-ratio: 1/1;
-    }
-    h6{
-        font-size: 1.8vw;
-        color: blue;
-    }
-    p{
-        font-size: 1.2vw;
-        padding-top: 3%;
-        line-height: 1.3;
-    }
+
+.explanation-inside {
+  display: flex;
+  padding: 0 3% 3% 3%;
+  height: 100%;
+
+  img {
+    padding: 20px;
+    aspect-ratio: 1/1;
+  }
+
+  h6 {
+    font-size: 1.8vw;
+    color: blue;
+  }
+
+  p {
+    font-size: 1.2vw;
+    padding-top: 3%;
+    line-height: 1.3;
+  }
 }
-.time{
-    position: absolute;
-    bottom: 10px;
-    right: 30px;
-    font-size: 15px;
+
+.time {
+  text-align: right;
+  position: absolute;
+  bottom: 10px;
+  right: 30px;
+  font-size: 15px;
 }
 
 /*説明欄×ボタン*/
-  .close-button {
-    display: block;
-    position: relative;
-    margin: 5px 5px auto auto;
-    width: 2vw;
-    aspect-ratio: 1/1;
-    border: 2px solid #333; /* 枠の調整 */
-    background: #fff; /* ボタンの背景色 */
-  }
-   
-  .close-button::before, .close-button::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 3px; /* 棒の幅（太さ） */
-    height: 1.5vw; /* 棒の高さ */
-    background: #333; /* バツ印の色 */
-  }
-   
-  .close-button::before {
-    transform: translate(-50%,-50%) rotate(45deg);
-  }
-   
-  .close-button::after {
-    transform: translate(-50%,-50%) rotate(-45deg);
-  }
-
-.select{
-    border: 3px solid blue;/*マウスカーソルを合わせると枠線が表示*/
+.close-button {
+  display: block;
+  position: relative;
+  margin: 5px 5px auto auto;
+  width: 2vw;
+  aspect-ratio: 1/1;
+  border: 2px solid #333;
+  /* 枠の調整 */
+  background: #fff;
+  /* ボタンの背景色 */
 }
 
-.open{
-    display: block;/*表示クラス、クリックでクラスの表示・非表示を切り替える*/
+.close-button::before,
+.close-button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 3px;
+  /* 棒の幅（太さ） */
+  height: 1.5vw;
+  /* 棒の高さ */
+  background: #333;
+  /* バツ印の色 */
+}
+
+.close-button::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.close-button::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.select {
+  border: 3px solid blue;
+  /*マウスカーソルを合わせると枠線が表示*/
+}
+
+.open {
+  display: block;
+  /*表示クラス、クリックでクラスの表示・非表示を切り替える*/
 }
 
 /*モバイル用レイアウト*/
-@media (max-width: 800px){
-    .data-title{
-        font-size: 4vw;
-        margin-left: 5%;
-        border-left: 3px solid #000000;
+@media (max-width: 800px) {
+  .data-title {
+    font-size: 4vw;
+    margin-left: 5%;
+    border-left: 3px solid #000000;
+  }
+
+  .data1 {
+    margin: 0 3%;
+  }
+
+  #img-display1 img, #img-display2 img{
+    display: block;
+  }
+
+  .datalist {
+
+    img {
+      display: none;
     }
-    .data1{
-        margin: 0 3%;
+
+    h6 {
+      font-size: 2.5vw;
     }
-    .data-flex{
-        gap: 20px 3%;
+
+    p {
+      font-size: 3.3vw;
+      margin-bottom: 45%;
     }
-    .data-long{
-        aspect-ratio: 3/1;
-        padding: 10px;
-        margin-top: 20px;
+
+    span {
+      font-size: 3.5vw;
     }
-    .datalist{
-        justify-content:flex-start;
-        gap: 30%;
-        img{display: none;}
-        h6{
-            font-size: 2.5vw;
-        }
-        p{
-            font-size: 3.3vw;
-        }
-        span{
-            font-size: 3vw;
-        }
-        }
-        .explanation-inside{
-            padding: 5px;
-            img{
-                padding: 15px;
-            }
-            h6{
-                font-size: 2.5vw;
-            }
-            p{font-size: 2.3vw;}
-        }
-        /*×ボタン*/
-        .close-button{
-            width: 3vw;
-        }
-        .close-button::before, .close-button::after{
-            width: 1.5px;
-        }
+  }
+  .data-long{
+    p{margin-bottom: 0;}
+  }
+
+  .datalist .ratio-type{
+    font-size: 2vw;
+  }
+  /*説明欄*/
+  .explanation-inside {
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    height: 100%;
+
+    img {
+      padding: 15px;
+    }
+
+    h6 {
+      font-size: 2.5vw;
+    }
+
+    p {
+      font-size: 2.3vw;
+    }
+  }
+  .time{
+    font-size: 1.8vw;
+  }
+
+  /*×ボタン*/
+  .close-button {
+    width: 3vw;
+  }
+
+  .close-button::before,
+  .close-button::after {
+    width: 1.5px;
+  }
 }
