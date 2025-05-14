@@ -95,14 +95,14 @@
 }
 
 /*モバイル用レイアウト*/
-/*効いてない？*/
-@media(max-width: 1200px){
-    .office-text, .office-texe-reverse p{font-size: 1.5vw;}
-}
 @media(max-width: 800px){
     /*制度・福利厚生*/
+    #support-and-benefit{
+        padding: 3%;
+    }
     #support-and-benefit p{
         font-size: 15px;
+        padding-left: 3%;
     }
 
     /*オフィス*/
@@ -113,7 +113,11 @@
     .office-list, .office-list-reverse{
         display: flex;
         flex-direction: column;
-        p{font-size: 15px;}
+        p{
+            font-size: 15px;
+        padding-left: 5%;
+        padding-right: 5%;
+        }
         img{
             width: 100%;
         }
