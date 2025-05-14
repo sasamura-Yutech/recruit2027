@@ -11,14 +11,17 @@
   <script src="../js/toggle-menu.js" defer></script>
   <link href="../css/common.css" rel="stylesheet">
   <link href="../css/top.css" rel="stylesheet">
+  <script src="../js/smooth-scroll.js" defer></script>
 </head>
 
 <body>
+  <!--ページトップに置く目印（ページ内リンクのスムーズ遷移に使用）-->
+  <div id="top"></div>
   <!--ここからheader-->
   <header class="header">
     <div class="header-inner">
       <div class="header-left">
-        <a class="header-logo" href="top.html">
+        <a class="header-logo" href="#top" data-scroll-to="#top"><!--アンカーリンク-->
           <img src="../images/logo.svg">
         </a>
       </div>
