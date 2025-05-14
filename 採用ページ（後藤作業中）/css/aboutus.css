@@ -379,9 +379,8 @@
 .from-now-contents{
     display: flex;
     flex-wrap: wrap;
-    gap: 70px 50px;
     justify-content: center;
-    padding: 50px 10%;
+    gap: 5%;
     p{
         color: #1165e2;
         font-size: 18px;
@@ -391,6 +390,10 @@
 .from-now-content{
     height: 300px;
     width: 250px;
+    img{
+        object-fit:contain;
+        aspect-ratio: 1/1;
+    }
 }
 .from-now-content img{
     padding: 20px;
@@ -462,7 +465,7 @@
         font-size: 2.5vw;
         background-color: #111;
         position: relative;
-        height: 20vw;
+        height: 25vw;
     }
     .lineup-button{
         font-size: 50%;
@@ -513,11 +516,11 @@
     .from-now-contents {
         display: flex;
         flex-wrap: wrap;
-        gap: 10% 0%;
         justify-content: center;
+        gap: 2% ;
     }
     .from-now-content{
-        width: 30vw;
+        width: 40vw;
         height: auto;
         p{
             font-size: 80%;
