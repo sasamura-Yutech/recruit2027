@@ -58,14 +58,13 @@
     }
     h6{
         font-size: 25px;
-        margin-top: 30px;
     }
     p{
-        font-size: 20px;
+        font-size: 18px;
         line-height: 1.4;
-        padding-left: 50px;
-        padding-right: 50px;
-        margin-top: 30px;
+        padding-left: 4%;
+        padding-right: 4%;
+        margin-top: 4%;
     }
 }
 
@@ -79,7 +78,8 @@
 }
 
 .office-text-reverse{
-    padding-left: 5%;
+    padding-left: 3%;
+    width: 60%;
     h6{
         display: inline;
         border-bottom: 2px solid #000000;
