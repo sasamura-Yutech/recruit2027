@@ -69,7 +69,6 @@
 }
 
 .office-text{
-    width: 60%;
     padding-right: 5%;
     h6{
         display: inline;
@@ -80,7 +79,6 @@
 
 .office-text-reverse{
     padding-left: 3%;
-    width: 60%;
     h6{
         display: inline;
         border-bottom: 2px solid #000000;
