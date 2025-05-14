@@ -69,6 +69,7 @@
 }
 
 .office-text{
+    width: 60%;
     padding-right: 5%;
     h6{
         display: inline;
