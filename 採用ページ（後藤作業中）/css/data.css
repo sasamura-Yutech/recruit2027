@@ -38,7 +38,7 @@
   align-items: center;
   border-radius: 4px;
   box-shadow: 0px 3px 14px 0px rgba(0, 0, 0, 0.35);
-  padding: 7px;
+  padding: 1vw;
   flex-basis: 30%;
   aspect-ratio: 1/1;
 
@@ -80,56 +80,69 @@
   }
 }
 
-.data-long-left{
+.data-long-left {
   height: 100%;
   flex-basis: 50%;
-  img{
+
+  img {
     margin-left: auto;
     padding-right: 10%;
     height: 90%;
     width: 100%;
     aspect-ratio: 1/1;
-  object-fit: contain;}
+    object-fit: contain;
+  }
 }
+
 .data-long-right {
   flex-basis: 30%;
   height: 70%;
-    margin-right: auto;
+  margin-right: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
 }
-
+/*男女比・文系/理系*/
+.ratio-labels, .ratio-values{
+    color: blue;
+      display: flex;
+  justify-content: center;
+}
+#labels-academy,
+#values-academy{
+  gap: 1rem; /*文系・理系の割合：パーセンテージの間の余白設定*/
+}
+.ratio-values span{
+  font-weight: bold;
+}
+.ratio-labels span{
+    font-size: 15px;
+  width: 100%;
+  text-align: center;
+}
+#label-span{
+  width: 2vw;
+}
+#values-gender span:nth-child(1){
+  margin-right: 0.5em;
+}
+#values-gender span:nth-child(3){
+  margin-left: 0.5em;
+}
 
 /*横長データ詳細設定（保守ユーザ地域）*/
-.item{
+.item {
   width: 100%;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px #d3d3d3 solid;
   padding-bottom: 3px;
-  p{  
-    vertical-align: text-bottom;
-    font-size: 1.7vw;}
-}
 
-
-/*男女比・文系/理系の割合の上文字部分*/
-.ratio {
   p {
-    font-weight: normal;
-    text-align: center;
-    font-size: 1vw;
+    vertical-align: text-bottom;
+    font-size: 1.7vw;
   }
-
-  span {
-    font-weight: bold;
-  }
-}
-.datalist .ratio-type{
-  margin-bottom: 0;
-  font-size: 1vw;
 }
 
 
@@ -223,11 +236,15 @@
   /*マウスカーソルを合わせると枠線が表示*/
 }
 
-.open {
-  display: block;
-  /*表示クラス、クリックでクラスの表示・非表示を切り替える*/
+.explanation{
+  display: none;
 }
-
+.explanation.open{
+  display: block;
+}
+.close-button{
+  z-index: 9;
+}
 /*モバイル用レイアウト*/
 @media (max-width: 800px) {
   .data-title {
@@ -240,7 +257,8 @@
     margin: 0 3%;
   }
 
-  #img-display1 img, #img-display2 img{
+  #img-display1 img,
+  #img-display2 img {
     display: block;
   }
 
@@ -263,13 +281,17 @@
       font-size: 3.5vw;
     }
   }
-  .data-long{
-    p{margin-bottom: 0;}
+
+  .data-long {
+    p {
+      margin-bottom: 0;
+    }
   }
 
-  .datalist .ratio-type{
+  .datalist .ratio-type {
     font-size: 2vw;
   }
+
   /*説明欄*/
   .explanation-inside {
     padding: 5px;
@@ -289,7 +311,8 @@
       font-size: 2.3vw;
     }
   }
-  .time{
+
+  .time {
     font-size: 1.8vw;
   }
 
@@ -302,4 +325,53 @@
   .close-button::after {
     width: 1.5px;
   }
+
+  /*男女比・文系/理系*/
+
+.ratio{
+  width: 100%; /*親要素の幅に合わせる→margin-bottomが正確に効くように*/
+}
+
+.datalist .ratio-labels span {
+  flex: 1;
+  text-align: center;
+  font-size: 2.5vw;
+  width: auto;
+}
+
+.ratio-values {
+  margin-bottom: 45%; /* 親に余白をつける */
+}
+
+.ratio-values span {
+  flex: 1;
+  text-align: center;
+  font-weight: bold; 
+}
+#values-gender span:nth-child(2){
+  flex: 0 0 auto;
+  width: 0.5em;
+  content: "";
+  display: inline-block;
+}
+
+#labels-academy,
+#values-academy{
+  gap: 0.5rem;
+}
+#values-gender span:nth-child(1),
+#values-gender span:nth-child(3){
+  flex: 0;
+}
+
+#labels-gender span{
+  flex: 0 0 auto;
+  text-align: center;
+}
+#label-span{
+  flex: 0 0 auto;
+  width: 0.5em;
+  content: "";
+  display: inline-block;
+}
 }

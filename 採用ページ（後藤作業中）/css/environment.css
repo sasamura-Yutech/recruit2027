@@ -10,7 +10,9 @@
         padding: 4px 0 7px 7px;
         }
 }
-
+#content-1{
+    margin-top: 10%;
+}
 /*各種制度・福利厚生*/
 #support-and-benefit{
     background-color: lightgray;
@@ -57,7 +59,7 @@
         object-fit: cover;
     }
     h6{
-        font-size: 25px;
+        font-size: 23px;
     }
     p{
         font-size: 18px;
@@ -69,7 +71,7 @@
 }
 
 .office-text{
-    padding-right: 5%;
+    width: 100%;
     h6{
         display: inline;
         border-bottom: 2px solid #000000;
@@ -114,8 +116,6 @@
         flex-direction: column;
         p{
             font-size: 15px;
-        padding-left: 5%;
-        padding-right: 5%;
         }
         img{
             width: 100%;

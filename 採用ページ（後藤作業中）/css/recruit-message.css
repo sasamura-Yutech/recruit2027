@@ -11,7 +11,7 @@
 }
 .content-1{
     display: flex;
-    margin-top: 20%;
+    margin-top: 10%;
     margin-bottom: 200px;
 
 }
@@ -46,7 +46,7 @@
         font-size: 1.1vw;
         line-height: 1.6;
         margin-bottom: 50px;
-        margin-right: 5%;
+        margin-right: 4vw;
     }
     h5{
         font-size: 23px;
@@ -96,15 +96,14 @@
     }
     span{font-size: 2.2vw;}
     p{
-        font-size: 1.4vw;
-        padding-left: 4%;
-        padding-right: 4%;
+        font-size: 18px;
+
         line-height: 1.3;
     }
 }
 .content2-inside{
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 6vw;
+    padding-right: 6vw;
 }
 
 /*モバイルレイアウト*/
@@ -147,9 +146,7 @@
     }
     /*求める人物像*/
     .figure img{
-        width: 17%;
-        height: 17%;
-        aspect-ratio: 1/1;
+        display: none;
     }
     .figure-right{
         margin-left: 1%;
@@ -157,11 +154,11 @@
             font-size: 3vw;
         }
         h3{
-            font-size: 2.7vw;
+            font-size: 2.9vw;
             margin-bottom: 3%;
         }
         p{
-            font-size: 2.6vw;
+            font-size: 2.7vw;
         }
     }
     .content-2{

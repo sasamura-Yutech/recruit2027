@@ -11,14 +11,17 @@
   <script src="../js/toggle-menu.js" defer></script>
   <link href="../css/common.css" rel="stylesheet">
   <link href="../css/top.css" rel="stylesheet">
+  <script src="../js/smooth-scroll.js" defer></script>
 </head>
 
 <body>
+  <!--ページトップに置く目印（ページ内リンクのスムーズ遷移に使用）-->
+  <div id="top"></div>
   <!--ここからheader-->
   <header class="header">
     <div class="header-inner">
       <div class="header-left">
-        <a class="header-logo" href="top.html">
+        <a class="header-logo" href="#top" data-scroll-to="#top"><!--アンカーリンク-->
           <img src="../images/logo.svg">
         </a>
       </div>
@@ -42,7 +45,7 @@
               <li><a href="../html/aboutus.html">ユーテックを知る</a></li>
               <li><a href="../html/environment.html">働く環境</a></li>
               <li><a href="../html/data.html">データで見るユーテック</a></li>
-              <li><a href="../html/employee-top.html">社員インタビュー</a> </li>
+              <li><a href="../html/employee-top.html">社員の声</a> </li>
               <li><a href="../html/voice.html">気になるホンネ</a></li>
               <li><a href="../html/recruit-message.html">採用メッセージ</a></li>
               <li><a href="../html/entry-guide.html">選考案内</a></li>
@@ -228,8 +231,8 @@
             </p>
 
             <p class="realvoice-right">
-              「会社の雰囲気や人間関係が気になる」<br>
-              「プログラミング未経験でも大丈夫か気になる」
+              「会社の雰囲気や人間関係が気になる...」<br>
+              「プログラミング未経験でも大丈夫か気になる...」
             </p>
           </div>
 
@@ -268,7 +271,7 @@
            </div>
         </a>
   
-        <a href="../html/recruit-message.html">
+        <a href="../html/entry-guide.html">
           <div class="recruit-content" id="entry-guide">
             <div class="recruit-background" id="entry-guide-background"></div>
               <div class="recruit-text">
