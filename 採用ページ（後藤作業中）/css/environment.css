@@ -57,7 +57,7 @@
         object-fit: cover;
     }
     h6{
-        font-size: 25px;
+        font-size: 23px;
     }
     p{
         font-size: 18px;
@@ -69,7 +69,7 @@
 }
 
 .office-text{
-    padding-right: 5%;
+    width: 100%;
     h6{
         display: inline;
         border-bottom: 2px solid #000000;
@@ -114,8 +114,6 @@
         flex-direction: column;
         p{
             font-size: 15px;
-        padding-left: 5%;
-        padding-right: 5%;
         }
         img{
             width: 100%;
