@@ -10,7 +10,9 @@
         padding: 4px 0 7px 7px;
         }
 }
-
+#content-1{
+    margin-top: 10%;
+}
 /*各種制度・福利厚生*/
 #support-and-benefit{
     background-color: lightgray;

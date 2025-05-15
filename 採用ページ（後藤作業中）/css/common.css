@@ -153,8 +153,11 @@ p.header-recruit{width: 10px;}
 /*headerの設定*/
 
 /*footerの設定*/
+.footer-address{
+  max-width: 45%;
+}
 .address{
-  line-height: 1.3;
+  line-height: 1.4;
 }
 .footer-menu{
   display: flex;
