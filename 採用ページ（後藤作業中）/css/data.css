@@ -236,11 +236,15 @@
   /*マウスカーソルを合わせると枠線が表示*/
 }
 
-.open {
-  display: block;
-  /*表示クラス、クリックでクラスの表示・非表示を切り替える*/
+.explanation{
+  display: none;
 }
-
+.explanation.open{
+  display: block;
+}
+.close-button{
+  z-index: 9;
+}
 /*モバイル用レイアウト*/
 @media (max-width: 800px) {
   .data-title {

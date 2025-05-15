@@ -54,8 +54,8 @@
   background-image: url(../images/top/aboutus-background.jpg);
   color: #fff;
   padding-top: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 hr{
@@ -125,6 +125,9 @@ hr{
   justify-content: center;
   gap: 50px;
   padding-bottom: 50px;
+
+    max-width: 900px; /* 例えば900pxくらいで横幅制限 */
+  margin: 0 auto;   /* 横中央寄せ */
 }
 
 .content-title {
@@ -142,9 +145,10 @@ hr{
 }
 
 .aboutus-content {
+
   color: #111;
-  flex-basis: 400px;
-  flex-shrink: 0;
+  flex-basis: calc(50% - 25px);
+  flex-shrink: 1;
   padding: 20px 15px 10px 15px;
   background-color: #fff;
   box-shadow: 3px 3px 5px  #111;
@@ -152,6 +156,7 @@ hr{
 
   img {
     height: 280px;
+    width: 100%;
   }
 
   p {
@@ -308,15 +313,17 @@ hr{
   position: absolute;
   top: 0;
   left: 0;
-  padding: 5% 8%;
+  padding: 5% 3vw;
   pointer-events: none;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 3%;
 }
 
 .realvoice-left{
-  font-size: 23px;
+  width:auto;
+  font-size: 1.9vw;
   font-weight: bold;
   line-height: 1.4;
   span{
@@ -328,17 +335,18 @@ hr{
   }
 }
 .realvoice-right{
+  align-self: center;
+  line-height: 1.7;
   background-color: #111;
+  padding: 5px 3px;
   font-size: 20px;
   text-align: end;
   display: flex;
   align-items: center;
-  padding-left: 20px;
 }
 .realvoice-text{
   display: flex;
-  justify-content: center;
-  gap: 6%;
+  justify-content: space-evenly;
 }
 #voice-viewmore{
   pointer-events: all;
@@ -574,8 +582,9 @@ hr{
   .aboutus-content{
     margin-bottom: 50px;
     flex-basis: 350px;
+    max-width: 400px;
     img{
-      height: 200px;
+      height: 250px;
       width: 100%;
       object-fit: cover;
     }
@@ -601,10 +610,12 @@ hr{
   justify-content: space-between;
   gap: 50px;
 }
-.realvoice-text-right{
-  width: 90%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+.realvoice-left{
+  font-size: 23px;
+}
+.realvoice-right{
+  text-align: start;
+  align-self: start;
 }
 /*選考について*/
 .recruit-content{

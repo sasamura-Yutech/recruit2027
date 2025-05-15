@@ -23,12 +23,14 @@ for (let i = 0; i < datalists.length; i++) {
     });
 }
 
+/*
 //説明欄のボタンを押すと説明欄が消える（繰り返し）
 for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener('click', () => {
         explanations[i].classList.remove('open');
     });
 }
+*/
 
 
 
@@ -52,3 +54,34 @@ for (let i = 0; i < datalists.length; i++) {
 }
 
 
+//モバイルレイアウト用の記述
+
+// 二重発火防止用のフラグ
+let recentlyHandled = false;
+
+function handleClose(button) {
+    if (recentlyHandled) return;
+    recentlyHandled = true;
+
+    const explanation = button.closest('.explanation');
+    if (explanation) {
+        explanation.classList.remove('open');
+    }
+
+    setTimeout(() => {
+        recentlyHandled = false;
+    }, 100);
+}
+
+buttons.forEach(button => {
+    // click
+    button.addEventListener('click', (e) => {
+        handleClose(button);
+    });
+
+    // touchend に対し passive: false を指定して e.preventDefault() を有効にする
+    button.addEventListener('touchend', (e) => {
+        e.preventDefault(); // ← モバイルで必須
+        handleClose(button);
+    }, { passive: false });
+});
