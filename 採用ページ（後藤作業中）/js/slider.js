@@ -10,7 +10,7 @@ jQuery(document).ready(function($) {
                 dots:true,
                 autoplayTimeout: 8500,
                 smartSpeed: 450,
-                stagePadding: 50,
+                stagePadding: 15,
                 responsive: {
                   0: {
                     items: 1
