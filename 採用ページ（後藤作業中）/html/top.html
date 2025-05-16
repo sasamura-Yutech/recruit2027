@@ -12,6 +12,10 @@
   <link href="../css/common.css" rel="stylesheet">
   <link href="../css/top.css" rel="stylesheet">
   <script src="../js/smooth-scroll.js" defer></script>
+  <script src="../js/slider.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </head>
 
 <body>
@@ -174,39 +178,67 @@
     <!--ユーテックを知る-->
 
     <!--社員の声-->
+
+
     <div class="interview">
       <div class="content-title2">
         <h3>INTERVIEW</h3>
         <h2>社員の声</h2>
       </div>
 
-      <div class="figure-contents">
-        <a href="../html/employee-nisimura.html" class="figure-content">
-          <div class="hover-link">
-            <img class="figure-img" src="../images/employee/nishimura1.jpg">
-          </div>
-          <div class="figure-text">
-            <p>お客様から感謝の言葉を頂けると、「この仕事をやっていて良かった」と感じます</p>
-            <div class="figure-tag">
-              <p>#入社4年目</p>
-              <p>未経験</p>
+      <div class="carousel-menu">
+        <div id="carousel" class="owl-carousel">
+
+          <!--アイテム1 -->
+          <div class="item">
+            <div class="linkcard">
+              <a href="../html/employee-nisimura.html">
+                <img class="img-circle" src="../images/employee/nishimura1.jpg" alt="">
+                <div class="figure-text">
+                  <p>お客様から感謝の言葉を頂けると、「この仕事をやっていて良かった」と感じます</p>
+                  <div class="figure-tag">
+                    <p>#2022年入社</p>
+                    <p>未経験</p>
+                  </div>
+                </div>
+
+              </a>
+
             </div>
+
           </div>
-        </a>
-        <a href="../html/employee-inomata.html" class="figure-content">
-          <div class="hover-link">
-            <img class="figure-img" src="../images/employee/inomata1.jpg">
-          </div>
-          <div class="figure-text">
-            <p>文系にIT業界は向いていないと思っていましたが、IT未経験だからこそ求められるスキルを見つけました</p>
-            <div class="figure-tag">
-              <p>#入社2年目</p>
-              <p>#未経験</p>
+          <!--アイテム1ここまで-->
+
+          <!--アイテム2 -->
+          <div class="item">
+            <div class="linkcard">
+              <a href="../html/employee-inomata.html">
+                <img class="img-circle" src="../images/employee/inomata1.jpg" alt="">
+                <div class="figure-text">
+                  <p>文系にIT業界は向いていないと思っていましたが、IT未経験だからこそ求められるスキルを見つけました</p>
+                  <div class="figure-tag">
+                    <p>#2024年入社</p>
+                    <p>未経験</p>
+                  </div>
+                </div>
+
+              </a>
+
             </div>
+
           </div>
-        </a>
+          <!--アイテム2ここまで-->
+
+          <!--アイテム3-->
+
+
+          </a>
+
+        </div>
+
       </div>
-      <div class="newbutton">
+      <!--アイテム3ここまで-->
+      <div class="newbutton" id="interview-morebtn">
         <a class="new" href="../html/entry.html">社員の声一覧を見る</a>
       </div>
     </div>
@@ -258,35 +290,35 @@
         <a href="../html/recruit-message.html">
           <div class="recruit-content" id="recruit-message">
             <div class="recruit-background" id="recruit-message-background"></div>
-              <div class="recruit-text">
-                <div class="recruit-title">
-                  <h6>MESSAGE</h6>
-                  <h5>採用メッセージ</h5>
-                </div>
-                <div class="text-left">
-                  <p>ユーテックの社長からこれから共に働く皆さんへのメッセージとともに、ユーテックが持つビジョンや求める人物像を紹介します。</p>
-                </div>
-                <div class="play"></div>
+            <div class="recruit-text">
+              <div class="recruit-title">
+                <h6>MESSAGE</h6>
+                <h5>採用メッセージ</h5>
               </div>
-           </div>
+              <div class="text-left">
+                <p>ユーテックの社長からこれから共に働く皆さんへのメッセージとともに、ユーテックが持つビジョンや求める人物像を紹介します。</p>
+              </div>
+              <div class="play"></div>
+            </div>
+          </div>
         </a>
-  
+
         <a href="../html/entry-guide.html">
           <div class="recruit-content" id="entry-guide">
             <div class="recruit-background" id="entry-guide-background"></div>
-              <div class="recruit-text">
-                <div class="recruit-title">
-                  <h6>ENTRY GUIDE</h6>
-                  <h5>選考案内</h5>
-                </div>
-  
-                <div class="text-left">
-                  <p>募集要項や選考スケジュール、インターンシップの詳細など、選考に関する事項をご案内します。</p>
-                </div>
-                <div class="play"></div>
-
+            <div class="recruit-text">
+              <div class="recruit-title">
+                <h6>ENTRY GUIDE</h6>
+                <h5>選考案内</h5>
               </div>
-           </div>
+
+              <div class="text-left">
+                <p>募集要項や選考スケジュール、インターンシップの詳細など、選考に関する事項をご案内します。</p>
+              </div>
+              <div class="play"></div>
+
+            </div>
+          </div>
         </a>
       </div>
     </div>

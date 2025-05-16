@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 #top {
   height: 0;
   margin: 0;
@@ -7,13 +8,14 @@
 
 /*ファーストビュー案レイアウト*/
 
-.first-view{
-  img{
+.first-view {
+  img {
     object-fit: cover;
     width: 100%;
     aspect-ratio: 5/3;
   }
 }
+
 .catch-copie {
   position: absolute;
   top: 7%;
@@ -58,18 +60,20 @@
   padding-right: 10px;
 }
 
-hr{
+hr {
 
   margin: 0 auto 50px auto;
 }
 
 .aboutus-title {
   margin-right: auto;
-  h4{
+
+  h4 {
     font-size: 23px;
     font-weight: lighter;
   }
-  h3{
+
+  h3 {
     font-size: 30px;
     margin-top: 5px;
     margin-bottom: 30px;
@@ -106,14 +110,17 @@ hr{
   font-size: 19px;
 }
 
-.aboutus-linkarea{
+.aboutus-linkarea {
   width: 80%;
 }
-#aboutus-viewmore{
+
+#aboutus-viewmore {
   margin-right: 10px;
 }
-.aboutus-link:hover #aboutus-viewmore::before{
-  left: 10%; /* ホバー時、矢印が右に10%ずれる */
+
+.aboutus-link:hover #aboutus-viewmore::before {
+  left: 10%;
+  /* ホバー時、矢印が右に10%ずれる */
 }
 
 /*横線*/
@@ -126,8 +133,10 @@ hr{
   gap: 50px;
   padding-bottom: 50px;
 
-    max-width: 900px; /* 例えば900pxくらいで横幅制限 */
-  margin: 0 auto;   /* 横中央寄せ */
+  max-width: 900px;
+  /* 例えば900pxくらいで横幅制限 */
+  margin: 0 auto;
+  /* 横中央寄せ */
 }
 
 .content-title {
@@ -151,7 +160,7 @@ hr{
   flex-shrink: 1;
   padding: 20px 15px 10px 15px;
   background-color: #fff;
-  box-shadow: 3px 3px 5px  #111;
+  box-shadow: 3px 3px 5px #111;
   margin-bottom: 100px;
 
   img {
@@ -164,8 +173,9 @@ hr{
     line-height: 1.4;
   }
 }
-.aboutus-content:hover{
-    transform: translateY(-3px);
+
+.aboutus-content:hover {
+  transform: translateY(-3px);
   box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
   transition: all .5s;
 }
@@ -216,8 +226,9 @@ hr{
     padding-left: 10px;
   }
 }
+
 /*社員の声*/
-.interview{
+.interview {
   background-color: #fff;
   border-radius: 20px 20px 0 0;
   margin-top: -3%;
@@ -225,57 +236,102 @@ hr{
   padding-bottom: 100px;
   position: relative;
 }
-.figure-contents {
-  margin-top: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 7%;
+
+/*リンクカードの設定*/
+#carousel .item {
+  padding: 50px;
+  margin-bottom: 30px;
+  opacity: .2;
+  -webkit-transform: scale3d(0.8, 0.8, 1);
+  transform: scale3d(0.8, 0.8, 1);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-.figure-content {
-  box-shadow: 10px 10px rgba(0, 0, 0, 0.4);
-  background-color: #f8f8f8;
+/*真ん中に表示されたリンクカードの透明度を1にする*/
+#carousel .owl-item.active.center .item {
+  opacity: 1;
+  -webkit-transform: scale3d(1.0, 1.0, 1);
+  transform: scale3d(1.0, 1.0, 1);
+}
 
-  height: 420px;
-  width: 300px;
-  margin-bottom: 80px;
-  flex-shrink: 0;
-  flex-wrap: wrap;
 
-  p {
-    font-size: 15px;
-    line-height: 1.3;
+/*カルーセルメニューが自動で動く設定、下のドットの設定*/
+#carousel.owl-carousel .owl-dots .owl-dot.active span,
+#carousel.owl-carousel .owl-dots .owl-dot:hover span {
+  background: #3190E7;
+  transform: translate3d(0px, -50%, 0px) scale(0.7);
+}
+
+/*下のドットを左右真ん中に配置する設定*/
+#carousel.owl-carousel .owl-dots {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+#carousel.owl-carousel .owl-dots .owl-dot {
+  display: inline-block;
+}
+
+/*下のドットの設定？*/
+#carousel.owl-carousel .owl-dots .owl-dot span {
+  background: #3190E7;
+  display: inline-block;
+  height: 20px;
+  margin: 0 2px 5px;
+  transform: translate3d(0px, -50%, 0px) scale(0.3);
+  transform-origin: 50% 50% 0;
+  transition: all 250ms ease-out 0s;
+  width: 20px;
+}
+
+.linkcard {
+  background: #fff;
+  border-radius: 7px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.10), 0 15px 12px rgba(0, 0, 0, 0.02);
+}
+
+.figure-text {
+  p{
+    font-size: 18px;
+    line-height: 1.4;
   }
+  text-align: start;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.figure-img {
-  width: 300px;
-  height: 300px;
+.figure-tag {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.figure-tag p {
+  background-color: lightgray;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.img-circle {
+  aspect-ratio: 1/1;
   object-fit: cover;
 }
-.figure-text{
-  height: 110px;
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.figure-tag{
-  height: fit-content;
-  p{
-    display: inline-block;
-    background-color: lightgray;
-    font-size: 13px;
-    padding:5px 3px;
-    border-radius: 5px;
-  }
+
+#interview-morebtn {
+  margin-top: 50px;
 }
 
 
 
 /*気になるホンネ*/
-.voice{
+.voice {
   overflow: hidden;
   position: relative;
   border-radius: 20px 20px 0 0;
@@ -284,7 +340,7 @@ hr{
   cursor: pointer;
 }
 
-.voice-background{
+.voice-background {
   background: url(../images/photo-study.jpg) center center / cover no-repeat;
   width: 100%;
   height: 500px;
@@ -293,11 +349,11 @@ hr{
   transition: .5s ease-in-out;
 }
 
-.voice-background:hover{
+.voice-background:hover {
   transform: scale(1.1);
 }
 
-.voice-background::before{
+.voice-background::before {
   background: linear-gradient(45deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.3) 70%);
   content: "";
   height: 100%;
@@ -306,7 +362,7 @@ hr{
   z-index: -1;
 }
 
-.voice-inner{
+.voice-inner {
   color: #fff;
   height: 100%;
   width: 100%;
@@ -321,12 +377,13 @@ hr{
   gap: 3%;
 }
 
-.realvoice-left{
-  width:auto;
+.realvoice-left {
+  width: auto;
   font-size: 1.9vw;
   font-weight: bold;
   line-height: 1.4;
-  span{
+
+  span {
     text-decoration: underline;
     text-decoration-color: #0b6d7a;
     text-decoration-thickness: 0.25em;
@@ -334,7 +391,8 @@ hr{
     text-underline-offset: -0.1em;
   }
 }
-.realvoice-right{
+
+.realvoice-right {
   align-self: center;
   line-height: 1.7;
   background-color: #111;
@@ -344,24 +402,29 @@ hr{
   display: flex;
   align-items: center;
 }
-.realvoice-text{
+
+.realvoice-text {
   display: flex;
   justify-content: space-evenly;
 }
-#voice-viewmore{
+
+#voice-viewmore {
   pointer-events: all;
   font-size: 20px;
 }
+
 /* マウスオーバー時の動き */
 .voice:hover #voice-viewmore::before {
-	left: 10%; /* ホバー時、矢印が右に10%ずれる */
+  left: 10%;
+  /* ホバー時、矢印が右に10%ずれる */
 }
+
 /*気になるホンネ*/
 
 
 
 /*選考について*/
-.recruitment{
+.recruitment {
   position: relative;
   padding-top: 3%;
   background-color: #fff;
@@ -369,26 +432,30 @@ hr{
   margin-top: -3%;
   z-index: 7;
 }
-.recruit-contents{
+
+.recruit-contents {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
-.recruit-title{
-  h6{
+
+.recruit-title {
+  h6 {
     font-size: 20px;
     font-weight: lighter;
     text-shadow: 2px 2px 2px #111;
   }
-  h5{
+
+  h5 {
     font-size: 23px;
     padding-left: 5px;
     padding-top: 5px;
     text-shadow: 2px 2px 2px #111;
   }
 }
-.recruit-content{
+
+.recruit-content {
   border-radius: 20px;
   overflow: hidden;
   position: relative;
@@ -398,7 +465,7 @@ hr{
   margin-right: auto;
 }
 
-.recruit-background{
+.recruit-background {
 
   width: 100%;
   height: 300px;
@@ -407,11 +474,11 @@ hr{
   transition: .5s ease-in-out;
 }
 
-.recruit-background:hover{
+.recruit-background:hover {
   transform: scale(1.1);
 }
 
-.recruit-background::before{
+.recruit-background::before {
   background: linear-gradient(45deg, rgba(19, 18, 26, 0.9) 0%, transparent 70%);
   content: "";
   height: 100%;
@@ -419,7 +486,8 @@ hr{
   width: 100%;
   z-index: -1;
 }
-.recruit-text{
+
+.recruit-text {
   color: #fff;
   position: absolute;
   top: 0;
@@ -432,9 +500,11 @@ hr{
   flex-direction: column;
   justify-content: space-between;
 }
-.text-left{
+
+.text-left {
   width: 60%;
-  p{
+
+  p {
     font-size: 17px;
     line-height: 1.4;
     text-shadow: 2px 2px 2px #111;
@@ -442,88 +512,112 @@ hr{
 }
 
 /*採用メッセージ背景画像*/
-#recruit-message-background{
+#recruit-message-background {
   background: url('../images/top/recruit-message2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-x: center ;
-  background-position-y: 30%; 
+  background-position-x: center;
+  background-position-y: 30%;
 
 }
+
 /*選考案内背景画像*/
-#entry-guide-background{
+#entry-guide-background {
   background: url('../images/top/entry-guide.jpg') center center / cover no-repeat;
 }
+
 /* 円 */
 .play {
-	font-size: 20px;
-	position: relative;
+  font-size: 20px;
+  position: relative;
   margin-left: auto;
-	width: 1.4em;
-	height: 1.4em;
-	border: 0.1em solid #fff;
-	border-radius: 100%;
+  width: 1.4em;
+  height: 1.4em;
+  border: 0.1em solid #fff;
+  border-radius: 100%;
 }
+
 /* マーク */
 .play::before {
-	content: "";
-	position: absolute;
-	top: 0.22em;
-	left: 0.4em;
-	width: 0;
-	height: 0;
-	border-top: 0.4em solid transparent;
-	border-left: 0.6em solid #fff;
-	border-bottom: 0.4em solid transparent;
+  content: "";
+  position: absolute;
+  top: 0.22em;
+  left: 0.4em;
+  width: 0;
+  height: 0;
+  border-top: 0.4em solid transparent;
+  border-left: 0.6em solid #fff;
+  border-bottom: 0.4em solid transparent;
 }
+
 /*選考について*/
 
 
 /*ボタン設定*/
 
 /*リンクなしVIEWMOREボタンーーーーーーーーーーーーーーーーーーーー*/
-.viewmore{
+.viewmore {
   width: fit-content;
   margin-left: auto;
 }
+
 .viewmore {
-	--arrow-color:#fff; /* 矢印の色を設定 */
-	position: relative; /* 疑似要素を位置指定するための基準 */
-	padding: 0 2.5em .5em .5em; /* 内側の余白（右に矢印部分を空ける） */
-	color: var(--arrow-color); /* 文字色を矢印の色と統一 */
-	text-decoration: none; /* 下線を非表示 */
+  --arrow-color: #fff;
+  /* 矢印の色を設定 */
+  position: relative;
+  /* 疑似要素を位置指定するための基準 */
+  padding: 0 2.5em .5em .5em;
+  /* 内側の余白（右に矢印部分を空ける） */
+  color: var(--arrow-color);
+  /* 文字色を矢印の色と統一 */
+  text-decoration: none;
+  /* 下線を非表示 */
 }
 
 .viewmore::before {
-	border-bottom: 1px solid var(--arrow-color); /* 下線としての矢印部分 */
-	border-right: 1px solid var(--arrow-color); /* 右線としての矢印部分 */
-	bottom: 0; /* 矢印をボタン下部に配置 */
-	content: ''; /* 疑似要素でコンテンツを空に設定 */
-	height: 12px; /* 矢印の高さ */
-	position: absolute; /* 親要素から相対的に配置 */
-	left: 0; /* 矢印の位置を左端に */
-	transform: skewX(50deg); /* 矢印の形状を傾けてデザイン */
-	width: 100%; /* ボタン全体の幅に矢印を合わせる */
-	transition: all .3s; /* なめらかな動き（ホバー時） */
+  border-bottom: 1px solid var(--arrow-color);
+  /* 下線としての矢印部分 */
+  border-right: 1px solid var(--arrow-color);
+  /* 右線としての矢印部分 */
+  bottom: 0;
+  /* 矢印をボタン下部に配置 */
+  content: '';
+  /* 疑似要素でコンテンツを空に設定 */
+  height: 12px;
+  /* 矢印の高さ */
+  position: absolute;
+  /* 親要素から相対的に配置 */
+  left: 0;
+  /* 矢印の位置を左端に */
+  transform: skewX(50deg);
+  /* 矢印の形状を傾けてデザイン */
+  width: 100%;
+  /* ボタン全体の幅に矢印を合わせる */
+  transition: all .3s;
+  /* なめらかな動き（ホバー時） */
 }
 
 /* マウスオーバー時の動き */
 .viewmore:hover::before {
-	left: 10%; /* ホバー時、矢印が右に10%ずれる */
+  left: 10%;
+  /* ホバー時、矢印が右に10%ずれる */
 }
+
 /*リンクなしVIEWMOREボタンーーーーーーーーーーーーーーーーーーーー*/
 
 /*マウスオーバー時に画像が拡大＆リンクカード*/
 /*img領域だけでなく、a領域にマウスが入ったら画像が拡大するように変えたい*/
-.hover-link{
+.hover-link {
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
 }
-.hover-link img{
+
+.hover-link img {
   transition: 1s all;
 }
-.hover-link img:hover{
+
+.hover-link img:hover {
   opacity: 0.7;
   transform: scale(1.2, 1.2);
   transition: 1s all;
@@ -531,105 +625,125 @@ hr{
 
 
 /*事例紹介一旦非表示状態に*/
-.casestudy-none{
+.casestudy-none {
   display: none;
 }
 
 /*モバイル用レイアウト*/
-@media(max-width: 800px){
+@media(max-width: 800px) {
+
   /*トップメッセージ部分*/
-  .top-message p{
+  .top-message p {
     font-size: 15px;
     padding-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
   }
-  .header-image{
+
+  .header-image {
     height: 50vh;
   }
+
   /*ABOUTUS部分*/
-  .aboutus{
+  .aboutus {
     background-repeat: no-repeat;
     background-size: cover;
     padding-left: 10px;
     padding-right: 10px;
   }
-  .aboutus-link{
+
+  .aboutus-link {
     display: flex;
     flex-direction: column;
   }
 
-  .aboutus-linkarea{
+  .aboutus-linkarea {
     width: 100%;
   }
-  .aboutus-link-left{
+
+  .aboutus-link-left {
     width: 100%;
-    p{
+
+    p {
       font-size: 16px;
     }
   }
+
   /*ABOUTUS内コンテンツ部分*/
-  .content-title{
-    h6{
+  .content-title {
+    h6 {
       font-size: 3vw;
       font-weight: normal;
     }
   }
-  .aboutus-contents{
+
+  .aboutus-contents {
     flex-direction: column;
     gap: 20px;
   }
-  .aboutus-content{
+
+  .aboutus-content {
     margin-bottom: 50px;
     flex-basis: 350px;
     max-width: 400px;
-    img{
+
+    img {
       height: 250px;
       width: 100%;
       object-fit: cover;
     }
-    p{
+
+    p {
       font-size: 15px;
     }
   }
+
   /*ABOUTUS外タイトル部分*/
-  .content-title2{
+  .content-title2 {
     padding-left: 5%;
+  }
+  /*社員の声*/
+  .figure-text{
+    font-size: 16px;
+  }
+  #carousel .item{
+    padding: 10px;
   }
 
   /*気になるホンネ*/
-  .realvoice-title{
+  .realvoice-title {
     margin-left: 0;
   }
-  .realvoice-inner{
+
+  .realvoice-inner {
     padding: 3%;
   }
-  .realvoice-text{
+
+  .realvoice-text {
     display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 50px;
-}
-.realvoice-left{
-  font-size: 23px;
-}
-.realvoice-right{
-  text-align: start;
-  align-self: start;
-}
-/*選考について*/
-.recruit-content{
-  width: 85%;
-  height: auto;
-}
-.text-left{
-  width: 80%;
-}
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+  }
+
+  .realvoice-left {
+    font-size: 23px;
+  }
+
+  .realvoice-right {
+    text-align: start;
+    align-self: start;
+  }
+
+  /*選考について*/
+  .recruit-content {
+    width: 85%;
+    height: auto;
+  }
+
+  .text-left {
+    width: 80%;
+  }
 
 
 }
-
-
-
-
-
