@@ -29,15 +29,17 @@ section{
 /* ここまで社員プロフィール */
 
 /* ここからスキップボタン */
-.skipbutton{ 
-  width: 800px;
+.skipbutton{
+  width: 90%; 
+  max-width: 800px;
   text-align: center;
   margin:0 auto 0px auto;
 }
 .page{
-  width: 300;
+  width: 300px;
   padding: 10;
   margin: 5;
+  font-size: 1.5vw;
 }
 /* ここまでスキップボタン */
 figcaption{
@@ -50,7 +52,7 @@ figcaption{
 }
 .tab-nav-item{
   color: #ffffff;
-  background-color: #575757;
+  background-color: #a7a7a7;
   text-decoration: none;
   width: 100%;
   margin-right: 2px;
@@ -58,8 +60,9 @@ figcaption{
   padding: 20px 0;
 }
 .tab-nav-item.is-active {
-  color: #ffffff;
-  background-color: #000000;
+  color: #3a3a3a;
+  font-size: 25px;
+  background-color: #67c0fc;
 }
 .tab-contents-item{
   display: none;
@@ -112,7 +115,7 @@ figcaption{
   width: 200px;
   margin: 80px auto ;
   font-weight: bold;
-  background-color: rgb(127, 127, 127);
+  background-color: rgb(211, 211, 211);
   padding: 20px;
 }
 
@@ -130,7 +133,7 @@ figcaption{
   }
   .skipbutton{ 
     width: 95%;
-    font-size: 1vw;
+    font-size: vw;
     text-align: center;
     margin:0 auto 0px auto;
   }
