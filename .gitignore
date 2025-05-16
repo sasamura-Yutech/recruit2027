@@ -5,3 +5,4 @@ Desktop.ini
 # macOS用
 .DS_Store
 git rm --cached -r Thumbs.db
+git commit -m "Add .gitignore and remove Thumbs.db from tracking"
