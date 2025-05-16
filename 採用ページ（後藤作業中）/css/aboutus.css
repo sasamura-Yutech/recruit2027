@@ -30,7 +30,7 @@
 /*設立*/
 .construction{
     margin-bottom: 150px;
-    background-color: #bebebe;
+    background-color:#f1f1f1;
     padding-top: 30px;
     padding-bottom: 50px;
     h3 {
@@ -67,7 +67,7 @@
 /*いま*/
 .now{
     margin-bottom: 150px;
-    background-color: #bebebe;
+    background-color: #f1f1f1;
     padding-top: 30px;
     padding-bottom: 50px;
     
@@ -345,7 +345,7 @@
 
 /*これから*/
 .from-now{
-    background-color: #bebebe;
+    background-color: #f1f1f1;
     padding-top: 30px;
     padding-bottom: 50px;
     text-align: center;
@@ -355,7 +355,7 @@
             font-weight: bold;
     
             text-decoration: underline;
-            text-decoration-color: #657ab4;
+            text-decoration-color:#657ab4;
             text-decoration-thickness: 0.5em;
             text-decoration-skip-ink: none;
             text-underline-offset: -0.25em;
@@ -382,7 +382,7 @@
     justify-content: center;
     gap: 5%;
     p{
-        color: #1165e2;
+        color: #0c4469;
         font-size: 18px;
         font-weight: bold;
     }
