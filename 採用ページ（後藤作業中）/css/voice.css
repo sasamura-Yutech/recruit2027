@@ -101,7 +101,7 @@ footer{
       margin-top: 50px;
       margin-bottom: 50px;
       text-align: center;
-      font-size: 4vw;
+      font-size: 70%;
       line-height: 2;
       letter-spacing: -1;
     }
@@ -121,7 +121,7 @@ footer{
     }
     .accordion-trigger{
         text-align: center;
-        font-size: 5vw;
+        font-size: 4vw;
         font-weight: bold;
         display:block;
         padding: 0 auto;
