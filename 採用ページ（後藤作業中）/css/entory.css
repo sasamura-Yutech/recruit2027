@@ -1,0 +1,14 @@
+main{
+    padding-top: 100px;
+}
+.content{
+    text-align: center;
+    margin: 100px;
+    font-weight: bold;
+    font-size: 1vw;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
