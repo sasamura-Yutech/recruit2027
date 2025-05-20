@@ -21,7 +21,7 @@
 /*設立*/
 .construction{
     margin-bottom: 150px;
-
+    background-color: #c1cdd8;
     padding-top: 30px;
     padding-bottom: 50px;
     h3 {
@@ -58,7 +58,7 @@
 /*いま*/
 .now{
     margin-bottom: 150px;
-
+    background-color: #c1cdd8;
     padding-top: 30px;
     padding-bottom: 50px;
     
