@@ -393,15 +393,16 @@
 
 /*モバイル用レイアウト*/
 @media(max-width: 800px){
-    /*トップ*/
-    .aboutus-top{
-        height: 45vh;
-        h2{font-size: 20px;}
+    .aboutus-catchcopie{
+        padding-bottom: 30px;
     }
     /*設立*/
     .construction{
         padding-bottom: 0px;
         margin-bottom: 10%;
+        h3{
+            font-size: 19px;
+        }
     }
     .construction-inside{
         img{display: none;}
@@ -410,7 +411,12 @@
     }
     /*いま*/
     .now{
-        margin-bottom: 10%;
+        h3{
+            margin-bottom: 30px;
+            font-size: 19px;
+        }
+        h4{font-size: 20px;}
+        h2{font-size: 20px;}
     }
     /*CUSTOMER*/
     .customer-inside {
@@ -527,6 +533,12 @@
     /* ここまでモーダルウィンド */
     /*これから*/
     /*STRUCTURE*/
+    .from-now{
+        h3{
+            margin-bottom: 30px;
+            font-size: 19px;
+        }
+        h2{font-size: 20px;}
     .from-now-text {
         padding: 6%;
         p{
@@ -549,4 +561,5 @@
             padding: 10px;
         }
     }
+}
 }
