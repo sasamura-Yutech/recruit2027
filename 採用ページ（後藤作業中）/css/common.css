@@ -113,7 +113,7 @@ p.header-recruit{width: 10px;}
   font-weight: 600;
   align-items: center;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 60px;
 
 }
 
@@ -192,13 +192,16 @@ p.header-recruit{width: 10px;}
   background-size: 50%;
   background-position: center;
   background-repeat: no-repeat;
+  position: absolute;
+  top: 28px;
+  right: 20px;
 }
 
 /*ハンバーガーメニュー（閉じるボタン）*/
 #menu-close{
-  margin-right: 10px;
+  margin-right: 20px;
   margin-left: auto;
-  margin-top: 2.7vw;
+  margin-top: 28px;
   display: block;
   width: 44px;
   height: 34px;
@@ -309,6 +312,13 @@ border-color: #6bb6ff;
 
 /*モバイル用の画面レイアウト*/
 @media(max-width: 800px){
+  /*ハンバーガーメニュー*/
+  #menu-open{
+    top: 10px;
+  }
+  #menu-close{
+    margin-top: 10px;
+  }
   /*ヘッダー部分*/
   .header-logo{
     width: 60%;

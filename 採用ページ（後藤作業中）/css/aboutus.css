@@ -3,34 +3,25 @@
     background-color: #ffffff;
 }
 
-/*ABOUTUSトップ画面*/
-.aboutus-top{
-    height: 500px;
-    background-image: url(../images/aboutus-top.jpg);
-    background-size: cover;
-    margin-bottom: 100px;
-    h2{
-        color: #fff;
-        line-height: 1.5;
-        padding-top: 100px;
-        padding-left: 100px;
-        font-size: 40px;
-    }
-}
-.title{
-    text-align: center;
-    margin-bottom: 100px;
-}
-
 .aboutus{
+    padding-top: 50px;
     margin-left: 8%;
     margin-right: 8%;
     padding-bottom: 100px;
 }
+/*トップメッセージ*/
+.aboutus-catchcopie{
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+    line-height: 1.5;
+    font-size: 1.6vw;
+}
+
 /*設立*/
 .construction{
     margin-bottom: 150px;
-    background-color: #bebebe;
+    background-color: #c1cdd8;
     padding-top: 30px;
     padding-bottom: 50px;
     h3 {
@@ -67,7 +58,7 @@
 /*いま*/
 .now{
     margin-bottom: 150px;
-    background-color: #bebebe;
+    background-color: #c1cdd8;
     padding-top: 30px;
     padding-bottom: 50px;
     
@@ -345,7 +336,7 @@
 
 /*これから*/
 .from-now{
-    background-color: #bebebe;
+    background-color: #c1cdd8;
     padding-top: 30px;
     padding-bottom: 50px;
     text-align: center;
@@ -382,7 +373,7 @@
     justify-content: center;
     gap: 5%;
     p{
-        color: #1165e2;
+        color: #0349b3;
         font-size: 18px;
         font-weight: bold;
     }
@@ -413,7 +404,7 @@
     }
     .construction-inside{
         img{display: none;}
-        p{font-size: 17px;
+        p{font-size: 2vw;
             margin-right: 5%;}
     }
     /*いま*/
@@ -509,7 +500,7 @@
     /*これから*/
     /*STRUCTURE*/
     .from-now-text {
-        padding: 10%;
+        padding: 6%;
         p{
         font-size: 2vw;}
     }
@@ -524,6 +515,10 @@
         height: auto;
         p{
             font-size: 80%;
+        }
+        img{
+            width: 70%;
+            padding: 10px;
         }
     }
 }
