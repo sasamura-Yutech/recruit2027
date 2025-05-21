@@ -1,6 +1,11 @@
 @charset "utf-8";
 
+.contact-message{
+    margin-top: 100px;
+    text-align: center;
+}
 .contact-form{
+    text-align: center;
     padding-top: 110px;
     max-width: 800px;
     margin: 0 auto;
