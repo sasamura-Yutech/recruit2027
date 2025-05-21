@@ -52,7 +52,7 @@
 
   p {
     font-size: 1.5vw;
-    color: blue;
+    color: #1b4dbb;
     font-weight: bold;
   }
 
@@ -105,7 +105,7 @@
 }
 /*男女比・文系/理系*/
 .ratio-labels, .ratio-values{
-    color: blue;
+    color: #1b4dbb;
       display: flex;
   justify-content: center;
 }
@@ -178,7 +178,7 @@
 
   h6 {
     font-size: 1.8vw;
-    color: blue;
+    color: #1b4dbb;
   }
 
   p {
@@ -232,7 +232,7 @@
 }
 
 .select {
-  border: 3px solid blue;
+  border: 3px solid #1b4dbb;
   /*マウスカーソルを合わせると枠線が表示*/
 }
 
@@ -247,6 +247,10 @@
 }
 /*モバイル用レイアウト*/
 @media (max-width: 800px) {
+  .select {
+  border: 1.5px solid #1b4dbb;
+  /*マウスカーソルを合わせると枠線が表示*/
+}
   .data-title {
     font-size: 4vw;
     margin-left: 5%;
@@ -263,6 +267,7 @@
   }
 
   .datalist {
+    padding: 5px;
 
     img {
       display: none;

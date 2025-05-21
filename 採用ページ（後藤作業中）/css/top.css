@@ -67,6 +67,7 @@ hr {
 
 .aboutus-title {
   margin-right: auto;
+  margin-left: 100px;
 
   h4 {
     font-size: 23px;
@@ -369,7 +370,7 @@ hr {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 5% 3vw;
+  padding: 3% 3vw 5% 3vw;
   pointer-events: none;
   display: flex;
   flex-direction: column;
