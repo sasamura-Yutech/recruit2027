@@ -1,5 +1,7 @@
 @charset "utf-8";
-
+.content-top-area img{
+    object-position: 0 50%;
+}
 .contact-message{
     margin-top: 100px;
     text-align: center;
