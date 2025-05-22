@@ -15,7 +15,7 @@
     margin-right: auto;
     padding-bottom: 50px;
     line-height: 1.5;
-    font-size: 1.6vw;
+    font-size: min(3vw,20px);
 }
 
 /*設立*/
@@ -149,15 +149,15 @@
     position: relative;
 }
 .lineup-button{
-    font-size: 15px;
+    font-size: min(3vw,10px);
     color: #ffffff;
     background-color: #d43162;
     border-radius: 15px;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 10px;
     position: absolute;
     top: 60%;
-    left:70%
+    left:65%
 }
 #package{
     background-size: cover;
@@ -219,7 +219,7 @@
 }
 .modal-inner{
     position: relative;
-    margin:180px auto auto auto;
+    margin: 10% auto;
     background: #fff;
     display: block;
     padding: 21px 8px 21px;
@@ -375,7 +375,7 @@
     justify-content: center;
     gap: 5%;
     p{
-        color: #0349b3;
+        color: #002e74;
         font-size: 18px;
         font-weight: bold;
     }
@@ -407,7 +407,7 @@
     }
     .construction-inside{
         img{display: none;}
-        p{font-size: 2vw;
+        p{font-size: min(3vw,18px);
             margin-right: 5%;}
     }
     /*いま*/
@@ -422,7 +422,7 @@
     /*CUSTOMER*/
     .customer-inside {
         h6{
-        font-size: 70%;
+        font-size: min(3vw,18px);
         padding-top: 10%;
         height: auto;
         letter-spacing: -1;
@@ -442,7 +442,7 @@
         display:contents;
     }
     .product-lineup h6{
-        font-size: 15px;
+        font-size: min(3vw,18px);
     }
     .lineup-button{
         padding: 5%;
@@ -470,7 +470,7 @@
         height: 25vw;
     }
     .lineup-button{
-        font-size: 50%;
+        font-size: min(2vw,12px);
         color: #ffffff;
         background-color: #d43155;
         border-radius: 15px;
@@ -509,12 +509,9 @@
     }
     /* ここからモーダルウィンド */
     .modal-inner{
-        position: relative;
+        width: min(80%,450px);
         background: #fff;
         display: block;
-        margin-top:10% ;
-        padding: 0;
-        width: 80%;
         height: auto;
         /* height: 600px; */
     }
@@ -522,14 +519,14 @@
         padding-top: 10%;
     }
     .content-title{
-        font-size:110%;
+        font-size:max(3vw,15px);
         font-weight: bold;
         text-align: center;
         margin-bottom: 2vh;
     }
     .content-text{
         line-height: 1.3em;
-        font-size: 90%;
+        font-size: max(2vw,12px);
     }
     /* ここまでモーダルウィンド */
     /*これから*/
@@ -543,7 +540,7 @@
     .from-now-text {
         padding: 6%;
         p{
-        font-size: 2vw;}
+        font-size: min(3vw,18px);}
     }
     .from-now-contents {
         display: flex;
@@ -555,7 +552,7 @@
         width: 40vw;
         height: auto;
         p{
-            font-size: 80%;
+            font-size: min(2.5vw,18px);
         }
         img{
             width: 70%;
