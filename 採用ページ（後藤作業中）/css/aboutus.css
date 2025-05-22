@@ -44,8 +44,8 @@
     margin-top: 15px;
     align-items:center ;
     p{
-        font-size: 20px;
-        margin-right: 100px;
+        font-size:min(3vw,18px);
+        margin-right: 10%;
         margin-bottom: 50px;
     }
     img{
@@ -366,7 +366,7 @@
         font-weight: bold;
     }
     p{
-        font-size: 20px;
+        font-size:min(3vw,18px);
     }
 }
 .from-now-contents{
@@ -407,7 +407,7 @@
     }
     .construction-inside{
         img{display: none;}
-        p{font-size: min(3vw,18px);
+        p{
             margin-right: 5%;}
     }
     /*いま*/
@@ -470,11 +470,11 @@
         height: 25vw;
     }
     .lineup-button{
-        font-size: min(2vw,12px);
+        font-size: min(2.5vw,10px);
         color: #ffffff;
         background-color: #d43155;
         border-radius: 15px;
-        padding: 10px 20px;
+        padding: 2vw;
         position: absolute;
         top: 60%;
         left:70%
@@ -539,8 +539,6 @@
         h2{font-size: 20px;}
     .from-now-text {
         padding: 6%;
-        p{
-        font-size: min(3vw,18px);}
     }
     .from-now-contents {
         display: flex;

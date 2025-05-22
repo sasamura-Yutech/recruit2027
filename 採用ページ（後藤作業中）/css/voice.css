@@ -3,7 +3,7 @@
 .sub-title{
     margin:50px 30px 50px 30px;
     text-align: center;
-    font-size: 1.3vw;
+    font-size:min(2vw,18px);
     line-height: 2;
     letter-spacing: -1;
 }
@@ -23,7 +23,7 @@
 }
 .accordion-trigger{
     text-align: center;
-    font-size: 2.4vw;
+    font-size:min(4vw,25px);
     font-weight: bold;
     display:block;
     padding: 0 20px 0px 0px;
@@ -32,7 +32,7 @@
 .accordion-content{
     padding-left: 10vw;
     padding-right: 10vw;
-    font-size: 1vw;
+    font-size:min(3vw,18px);
 }
 .button-wrap{
     position: absolute;
@@ -97,14 +97,6 @@ footer{
 
 /* モバイル用レイアウト */
 @media(max-width:800px){
-    .sub-title{
-      margin-top: 50px;
-      margin-bottom: 50px;
-      text-align: center;
-      font-size: 70%;
-      line-height: 2;
-      letter-spacing: -1;
-    }
     .accordion{
         width: 95%;
         }
@@ -121,7 +113,6 @@ footer{
     }
     .accordion-trigger{
         text-align: center;
-        font-size: 4vw;
         font-weight: bold;
         display:block;
         padding: 0 auto;
@@ -141,9 +132,6 @@ footer{
         padding: 10px;
         display: none; 
         line-height: 2;
-    }
-    .accordion-content{
-        font-size: 62.5%;
     }
     
 }
