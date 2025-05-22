@@ -59,10 +59,10 @@
         object-fit: cover;
     }
     h6{
-        font-size: 23px;
+        font-size: min(3vw, 25px);
     }
     p{
-        font-size: 18px;
+        font-size: min(2vw, 20px);
         line-height: 1.4;
         padding-left: 4%;
         padding-right: 4%;

@@ -40,7 +40,7 @@
 
   p {
     padding-top: 100px;
-    font-size: 19px;
+    font-size: min(2vw, 22px);
     line-height: 1.8;
     font-weight: bold;
   }
@@ -100,7 +100,7 @@ hr {
 
   p {
     text-shadow: 2px 2px 2px #111;
-    font-size: 20px;
+    font-size: min(2vw, 20px);
     line-height: 1.5;
   }
 }
@@ -380,7 +380,7 @@ hr {
 
 .realvoice-left {
   width: auto;
-  font-size: 1.9vw;
+  font-size: max(1.7vw, 20px);
   font-weight: bold;
   line-height: 1.4;
 
@@ -398,7 +398,7 @@ hr {
   line-height: 1.7;
   background-color: #111;
   padding: 5px 3px;
-  font-size: 20px;
+  font-size: max(1.5vw, 20px);
   text-align: end;
   display: flex;
   align-items: center;

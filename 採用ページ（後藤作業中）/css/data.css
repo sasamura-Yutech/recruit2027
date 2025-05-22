@@ -217,7 +217,7 @@
   left: 50%;
   width: 3px;
   /* 棒の幅（太さ） */
-  height: 1.5vw;
+  height: max(1.5vw, 10px);
   /* 棒の高さ */
   background: #333;
   /* バツ印の色 */
@@ -252,6 +252,7 @@
   /*マウスカーソルを合わせると枠線が表示*/
 }
   .data-title {
+    margin-top: 50px;
     font-size: 4vw;
     margin-left: 5%;
     border-left: 3px solid #000000;
@@ -267,27 +268,29 @@
   }
 
   .datalist {
-    padding: 5px;
+    padding: 5px 2px;
 
     img {
       display: none;
     }
 
     h6 {
-      font-size: 2.5vw;
+      font-size: max(2.5vw, 10.5px);
     }
 
     p {
-      font-size: 3.3vw;
-      margin-bottom: 45%;
+      font-size: max(3.3vw, 15px);
+      margin-bottom: 42%;
     }
 
     span {
-      font-size: 3.5vw;
+      font-size: max(3.5vw, 17px);
     }
   }
 
   .data-long {
+    padding: 5px;
+    aspect-ratio: 5/2;
     p {
       margin-bottom: 0;
     }
@@ -298,6 +301,9 @@
   }
 
   /*説明欄*/
+  .explanation{
+    aspect-ratio: 3/1;
+  }
   .explanation-inside {
     padding: 5px;
     position: absolute;
@@ -305,15 +311,16 @@
     height: 100%;
 
     img {
-      padding: 15px;
+      display: none;
     }
 
     h6 {
-      font-size: 2.5vw;
+      font-size: max(2.5vw, 13px);
     }
 
     p {
-      font-size: 2.3vw;
+      font-size: max(2.3vw, 12px);
+
     }
   }
 
@@ -323,7 +330,7 @@
 
   /*×ボタン*/
   .close-button {
-    width: 3vw;
+    width: max(3vw, 16px);
   }
 
   .close-button::before,
