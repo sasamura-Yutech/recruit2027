@@ -18,14 +18,14 @@ section{
     margin: 20 auto;
 }
 .profile img{
-  width: 200px;
-  height: 240px; 
+  width: min(35%,250px);
+  aspect-ratio: 1/1;
   object-fit: cover;
   margin: auto 10px 10px auto
 }
 .profile-figcaption{
     margin: auto auto 0 20px;
-    font-size: min(2vw,20px);
+    font-size: min(3vw,20px);
 }
 /* ここまで社員プロフィール */
 
@@ -40,7 +40,7 @@ section{
   width: 300px;
   padding: 10;
   margin: 5;
-  font-size: min(2vw,15px);
+  font-size: min(3vw,18px);
 }
 /* ここまでスキップボタン */
 figcaption{
@@ -70,8 +70,8 @@ figcaption{
   margin-top:40;
 }
 .tab-contents{
-  margin: 0 50px;
-  font-size: min(2vw,15px)
+  margin: 0 3%;
+  font-size: min(3vw,18px)
 }
 .tab-contents-caption{
   display: flex;
@@ -137,20 +137,9 @@ figcaption{
     margin: 10 auto;
   }
   .skipbutton{ 
-    width: 95%;
-    font-size: vw;
     text-align: center;
     margin:0 auto 0px auto;
   }
-.profile img{
-  width: 200px;
-  height: 240px; 
-  object-fit: cover;
-  margin: auto 10px 10px auto
-}
-.profile-figcaption{
-    margin: auto auto 0 20px;
-}
 .tab-contents-caption img{
     display: none;
 }
