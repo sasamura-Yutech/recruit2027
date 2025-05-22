@@ -12,13 +12,13 @@
   img {
     object-fit: cover;
     width: 100%;
-    aspect-ratio: 5/3;
+    height: max(50vw, 350px);
   }
 }
 
 .catch-copie {
   position: absolute;
-  top: 7%;
+  top: 6%;
   left: 15px;
   color: white;
   font-size: 5.5vw;
@@ -66,8 +66,8 @@ hr {
 }
 
 .aboutus-title {
-  margin-right: auto;
-  margin-left: 100px;
+  align-self: flex-start;
+margin-left: 7%;
 
   h4 {
     font-size: 23px;
@@ -204,7 +204,7 @@ hr {
     font-size: 23px;
     margin-bottom: 5px;
     font-weight: lighter;
-    color: blue;
+    color: #657ab4;
   }
 
   h2 {
@@ -673,7 +673,7 @@ hr {
   /*ABOUTUS内コンテンツ部分*/
   .content-title {
     h6 {
-      font-size: 3vw;
+      font-size: max(2.3vw, 15px);
       font-weight: normal;
     }
   }
@@ -728,10 +728,11 @@ hr {
   }
 
   .realvoice-left {
-    font-size: 23px;
+    font-size: max(3.5vw, 20px);
   }
 
   .realvoice-right {
+    font-size: max(3vw, 15px);
     text-align: start;
     align-self: start;
   }

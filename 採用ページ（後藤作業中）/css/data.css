@@ -253,7 +253,7 @@
 }
   .data-title {
     margin-top: 50px;
-    font-size: 4vw;
+    font-size: max(4vw, 18px);
     margin-left: 5%;
     border-left: 3px solid #000000;
   }
