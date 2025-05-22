@@ -279,8 +279,8 @@
     }
 
     p {
-      font-size: max(3.3vw, 15px);
-      margin-bottom: 42%;
+      font-size: max(3.8vw, 17px);
+      margin-bottom: 40%;
     }
 
     span {
@@ -290,7 +290,7 @@
 
   .data-long {
     padding: 5px;
-    aspect-ratio: 5/2;
+    aspect-ratio: 7/3;
     p {
       margin-bottom: 0;
     }

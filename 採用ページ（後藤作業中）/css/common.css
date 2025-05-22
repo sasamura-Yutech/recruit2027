@@ -17,6 +17,7 @@
   background-color: #fff;
   padding: 40px 70px 40px 50px;
   h2{
+    color: #657ab4;
     font-weight: lighter;
     margin-bottom: 5px;
 }
@@ -63,7 +64,6 @@ body{
 }
 img{
   max-width: 100%;
-  margin-left: -20px;
 }
 
 /*headerの設定*/
