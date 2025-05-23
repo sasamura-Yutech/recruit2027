@@ -3,7 +3,7 @@
 .sub-title{
     margin:50px 30px 50px 30px;
     text-align: center;
-    font-size:min(2vw,18px);
+    font-size:min(3vw,22px);
     line-height: 2;
     letter-spacing: -1;
 }
@@ -32,7 +32,7 @@
 .accordion-content{
     padding-left: 10vw;
     padding-right: 10vw;
-    font-size:min(3vw,18px);
+    font-size:min(3vw,22px);
 }
 .button-wrap{
     position: absolute;
@@ -71,24 +71,6 @@
 .top-content{
     display: block;
     margin: 0px 20px 30px 20px;
-}
-.comment{
-    display: flex;
-    width: 600px;
-    height: 150px;
-    margin: 0 auto;
-}
-.interviewer{
-    margin: auto 10px;
-}
-/* .comment-frame{ */
-    /* transform: scale(-1,1); */
-/* } */
-.comment-text{ 
-    font-size: 14px; 
-    display: block; 
-    width: 440px; 
-    margin: auto auto auto 30px;  
 }
 footer{
     margin-top: 100px;

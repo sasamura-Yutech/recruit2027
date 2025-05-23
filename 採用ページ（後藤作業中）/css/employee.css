@@ -37,10 +37,10 @@ section{
   margin:0 auto 0px auto;
 }
 .page{
-  width: 300px;
+  min-width:300px;
   padding: 10;
   margin: 5;
-  font-size: min(3vw,18px);
+  font-size: min(3vw,20px);
 }
 /* ここまでスキップボタン */
 figcaption{
@@ -59,10 +59,11 @@ figcaption{
   margin-right: 2px;
   text-align: center;
   padding: 20px 0;
+  font-size: min(3vw,20px);
 }
 .tab-nav-item.is-active {
   color: #3a3a3a;
-  font-size: 25px;
+  font-size:min(3.3vw,25px);
   background-color: #67c0fc;
 }
 .tab-contents-item{
@@ -71,19 +72,19 @@ figcaption{
 }
 .tab-contents{
   margin: 0 3%;
-  font-size: min(3vw,18px)
+  font-size: min(2.8vw,22px);
 }
 .tab-contents-caption{
   display: flex;
   height: 220;
   margin: 0 auto;
 }
-.tab-contents-caption img{
-  border-radius: 40%;
+.tab-figure{
+  border-radius: 40px;
 }
 .tab-figcaption{
   margin: auto auto 0 20;
-  font-size: min(3vw,18px);
+  line-height: 1.5;
 }
 .img-schedule{
   display: block;
@@ -107,12 +108,12 @@ figcaption{
 .reason-figure{
   display: flex;
   margin: 0 50;
-  font-size: min(3vw,18px);
+  font-size: min(3vw,22px);
 }
 .discovery-figure{
   display: flex;
   margin: 0 50;
-  font-size: min(3vw,18px);
+  font-size: min(3vw,22px);
 }
 .employee-list{
   display: block;
@@ -122,6 +123,7 @@ figcaption{
   font-weight: bold;
   background-color: rgb(211, 211, 211);
   padding: 20px;
+  font-size: min(3vw,18px);
 }
 
 /* ここまで本文 */
@@ -140,8 +142,7 @@ figcaption{
     text-align: center;
     margin:0 auto 0px auto;
   }
-.tab-contents-caption img{
-    display: none;
+  .tab-figure{
+    display: none !important;
+  }
 }
-}
-
