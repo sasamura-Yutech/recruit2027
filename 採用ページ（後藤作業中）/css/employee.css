@@ -10,7 +10,6 @@ section{
   margin: 120 auto;
 }
 
-
 /* ここから社員プロフィール */
 .profile{
     display: flex;
@@ -25,7 +24,7 @@ section{
 }
 .profile-figcaption{
     margin: auto auto 0 20px;
-    font-size: min(3vw,20px);
+    font-size: min(3.3vw,22px);
 }
 /* ここまで社員プロフィール */
 
@@ -40,7 +39,7 @@ section{
   min-width:300px;
   padding: 10;
   margin: 5;
-  font-size: min(3vw,20px);
+  font-size: min(3vw,22px);
 }
 /* ここまでスキップボタン */
 figcaption{
