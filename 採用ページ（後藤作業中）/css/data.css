@@ -292,9 +292,9 @@
     padding: 5px;
     aspect-ratio: 7/3;
     box-sizing: border-box;
-  }
-  .data-long p{
-    margin-bottom: 0;
+    p {
+      margin-bottom: 0;
+    }
   }
 
   .datalist .ratio-type {
