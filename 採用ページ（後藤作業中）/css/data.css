@@ -291,6 +291,7 @@
   .data-long {
     padding: 5px;
     aspect-ratio: 7/3;
+    box-sizing: border-box;
     p {
       margin-bottom: 0;
     }
