@@ -68,13 +68,13 @@
   align-items: center;
   border-radius: 20px 20px 0 0;
   z-index: 2;
-  background-image: url(../images/top/aboutus-background.jpg);
+  background-image:linear-gradient(rgba(0, 0, 0, 0.445), rgba(0, 0, 0, 0.5)), url(../images/top/factory.jpg);
+  background-position: 0 100%;
   color: #fff;
   padding-top: 50px;
   padding-left: 10px;
   padding-right: 10px;
 }
-
 hr {
 
   margin: 0 auto 50px auto;
@@ -676,6 +676,7 @@ hr {
     background-size: cover;
     padding-left: 10px;
     padding-right: 10px;
+    background-position: 50% 100%;
   }
 
   .aboutus-link {
