@@ -15,12 +15,15 @@
     width: 800px;
     max-width: 85%;
     margin: auto;
-    margin-top: 50px;
+    margin-top: min(2.5vh,40px);
     display: flex;   
     border-top: 1px solid#ccc; 
     text-decoration: none;
     color: rgb(82, 82, 82);
     position: relative;
+}
+.accordion-trigger2{
+    display: none;
 }
 .accordion-trigger{
     text-align: center;
@@ -80,6 +83,12 @@ footer{
 
 /* モバイル用レイアウト */
 @media(max-width:800px){
+    .sub-title{
+        margin-top:20px;
+        margin-bottom: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
     .accordion{
         width: 95%;
         }
@@ -89,15 +98,22 @@ footer{
         border-top: 1px solid#ccc; 
         text-decoration: none;
         color: rgb(82, 82, 82);
-        margin-bottom: 2vh;
         margin-top: 2vh;
         position: relative;
         width: 80%;
     }
+    .accordion-trigger2{
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        padding: 0 auto;
+        margin: 10px auto;
+        font-size:min(4.5vw,25px)
+    }
     .accordion-trigger{
         text-align: center;
         font-weight: bold;
-        display:block;
+        display:none;
         padding: 0 auto;
         margin: 20px auto 20px auto;
         font-size:min(4.5vw,25px)
