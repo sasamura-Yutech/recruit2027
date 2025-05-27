@@ -46,7 +46,7 @@
     p{
         font-size:min(3vw,22px);
         margin-right: 10%;
-        margin-bottom: 50px;
+        margin-bottom:min(3vh,30px);
     }
     img{
         object-fit: cover;
@@ -57,10 +57,10 @@
 
 /*いま*/
 .now{
-    margin-bottom: 150px;
+    margin-bottom: min(3vh,60px);
     background-color: #c1cdd8;
     padding-top: 30px;
-    padding-bottom: 50px;
+    padding-bottom: min(2vh,30px);
     
     h3 {
             text-align: center;
@@ -77,7 +77,7 @@
 }
 /*CUSTOMER*/
 .customer{
-    margin-bottom: 100px;
+    margin-bottom:min(5vh,60px);
 }
 .customer-inside{
     width: 100%;
@@ -124,7 +124,7 @@
     grid-template-columns: 40% 40%;;
     grid-template-rows: 250px 250px;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom:min(5vh,60px);
 }
 /*PRODUCTS中央文字部分*/
 .product-center{
@@ -334,8 +334,8 @@
 }
 .business-model-contents{
     img{
-        margin-top: 20px;
-        width: 95%;
+        margin-top: 15px;
+        width: 80%;
     }
 }
 
@@ -364,7 +364,6 @@
     text-align: start;
     padding: 50px 15%;
     line-height: 1.5;
-    margin-top: 15px;
     span{
         color: red;
         font-weight: bold;
