@@ -87,7 +87,7 @@ figcaption{
   margin:20px 0 auto 0
 }
 .tab-contents{
-  font-size: min(2.8vw,18px);
+  font-size: min(3vw,22px);
 }
 @media(max-width:800px){
   .tab-figure{
