@@ -12,7 +12,8 @@
     margin: auto;
 }
 .accordion-trigger-box{
-    width: 85%;
+    width: 800px;
+    max-width: 85%;
     margin: auto;
     margin-top: 50px;
     display: flex;   
@@ -32,7 +33,7 @@
 .accordion-content{
     padding-left: 10vw;
     padding-right: 10vw;
-    font-size:min(3vw,22px);
+    font-size:min(3vw,20px);
 }
 .button-wrap{
     position: absolute;
