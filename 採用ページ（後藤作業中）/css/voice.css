@@ -99,6 +99,7 @@ footer{
         display:block;
         padding: 0 auto;
         margin: 20px auto 20px auto;
+        font-size:min(4.5vw,25px)
     }
     .symbol span{
         position: absolute;
