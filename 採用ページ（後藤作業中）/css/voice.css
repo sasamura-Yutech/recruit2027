@@ -41,7 +41,7 @@
 .button-wrap{
     position: absolute;
     top:15%;
-    left:100%;
+    left:95%;
     width: 50px;
     height: 50px; 
 }
@@ -51,8 +51,8 @@
     left: -10%;
     display: inline-block;
     background-color: #505050;
-    width: 2vw;
-    height: 2px;
+    width: min(2vw,30px);
+    height: 1px;
     transition: all 0.4s ease;
 }
 .symbol span:nth-of-type(1){
