@@ -82,7 +82,7 @@
 .customer-inside{
     width: 100%;
     /* height: 450px; */
-    background-image: linear-gradient(rgba(77, 77, 77, 0.445), rgba(48, 48, 48, 0.5)),url(../images/aboutus/pixta_95483232_L.jpg);
+    background-image: url(../images/aboutus/customer.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
