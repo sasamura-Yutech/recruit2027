@@ -1,6 +1,9 @@
 /*#0c4469←ベースカラー*/
 
 @charset "utf-8";
+#yutechhp{
+  margin-left: 3px;
+}
 /*各コンテンツタイトル部分の設定*/
 .content-top-area{
   position: relative;
