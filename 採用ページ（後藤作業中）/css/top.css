@@ -114,7 +114,6 @@ hr {
   }
 
   p {
-    text-shadow: 2px 2px 2px #111;
     font-size: min(2vw, 20px);
     line-height: 1.5;
   }
