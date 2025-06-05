@@ -60,7 +60,7 @@ h2{
 /* ここまでスキップボタン */
 
 figcaption{
-  line-height: 2;
+  line-height: 1.8;
   letter-spacing: -1;
 }
 .tab-nav{
@@ -96,17 +96,14 @@ figcaption{
 }
 .tab-contents-caption{
   display: flex;
+  align-items: center;
 }
 .tab-figure{
   border-radius: 40px;
   width: min(40%,250px);
-  aspect-ratio: 1/1;
+  aspect-ratio: 4/5;
   object-fit: cover;
   margin-right: 2vw;
-}
-.tab-figcaption{
-  margin: auto auto 0 auto;
-  line-height: 1.5;
 }
 .img-schedule{
   display: block;
