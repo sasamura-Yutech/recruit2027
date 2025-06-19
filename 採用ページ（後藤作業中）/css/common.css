@@ -1,6 +1,8 @@
 /*#0c4469←ベースカラー*/
 
 @charset "utf-8";
+html{scroll-behavior: smooth;}
+
 #yutechhp{
   margin-left: 3px;
 }
