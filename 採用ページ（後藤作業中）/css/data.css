@@ -1,4 +1,7 @@
 @charset "utf-8";
+#data-topic1, #data-topic2, #data-topic3{
+  scroll-margin-top: 80px;
+}
 
 .data-title {
   font-size: 25px;

@@ -82,7 +82,7 @@
 .customer-inside{
     width: 100%;
     /* height: 450px; */
-    background-image: linear-gradient(rgba(77, 77, 77, 0.445), rgba(48, 48, 48, 0.5)),url(../images/aboutus/pixta_95483232_L.jpg);
+    background-image: url(../images/aboutus/customer.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -153,9 +153,11 @@
     }
 }
 .lineup-button{
+    cursor: pointer;
     font-size: min(2vw,12px);
     color: #ffffff;
     background-color: #d43162;
+    box-shadow: 2px 2px 1px #363636;
     border-radius: 15px;
     border: none;
     padding: 10px 10px;
