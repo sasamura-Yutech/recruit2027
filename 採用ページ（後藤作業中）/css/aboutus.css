@@ -82,9 +82,9 @@
 .customer-inside{
     width: 100%;
     /* height: 450px; */
-    background-image: url(../images/aboutus/customer.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.445), rgba(0, 0, 0, 0.5)), url(../images/aboutus/customer.jpg);
 }
 .customer h4{
     font-size: min(3.3vw,25px);
@@ -331,14 +331,28 @@
     h2{
         font-size: 27px;
         font-weight: bold;
-        margin-top: 10%;
+        margin-top: 5vh;
+        margin-bottom: 2vh;
     }
 }
-.business-model-contents{
+.business-model-content{
+    text-align: start;
+    padding: 2vh 15%;
+    line-height: 1.5;
+    font-size:min(3vw,22px)
+}
+.business-model-fig{
     img{
         margin-top: 15px;
-        width: 80%;
+        max-width: 90%;
+        max-height: 500px;
+        margin-bottom: 1vh;
     }
+    margin-bottom: 3vh;
+}
+.business-model-figcaption{
+    text-align: center;
+    font-size:min(3vw,22px)
 }
 
 /*これから*/
