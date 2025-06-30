@@ -12,18 +12,7 @@
 
     gtag('config', 'G-Q5S8J3DKKY');
   </script>
-  <script>
-  window.addEventListener("load", function () {
-    if (window.location.hash) {
-      const target = document.querySelector(window.location.hash);
-      if (target) {
-        setTimeout(() => {
-          target.scrollIntoView({ behavior: "auto" }); // または "smooth"
-        }, 100);
-      }
-    }
-  });
-</script>
+
 
   <meta charset="UTF-8">
   <title>データで見るユーテック|採用サイト|株式会社ユーテック</title>
@@ -38,6 +27,18 @@
 </head>
 
 <body>
+    <script>
+  window.addEventListener("load", function () {
+    if (window.location.hash) {
+      const target = document.querySelector(window.location.hash);
+      if (target) {
+        setTimeout(() => {
+          target.scrollIntoView({ behavior: "auto" }); // または "smooth"
+        }, 100);
+      }
+    }
+  });
+</script>
   <!--ここからheader-->
   <header class="header">
     <div class="header-inner">
