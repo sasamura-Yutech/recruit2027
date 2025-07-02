@@ -146,7 +146,7 @@ hr {
     margin-bottom: 100px;
     display: none;
     background-color: #ffffff;
-    padding: 20px;
+    padding: 20px 25px;
     border-radius: 20px;
 }
 .mobile-linkcard-top p{
@@ -160,7 +160,7 @@ hr {
   overflow: hidden;
 }
 .mobile-link-topics a{
-  padding-left: 10%;
+  padding-left: 10px;
 }
 
 
@@ -892,8 +892,20 @@ hr {
     }
 
     p {
-      font-size: 15px;
+      font-size: 10px;
     }
+  }
+
+  .topic a{
+    height: 75px;
+    img{
+      margin-right: 12px;
+      margin-left: 3px;
+    }
+  }
+
+  .topic a:after{
+    right: -10px;
   }
 
   /*ABOUTUS外タイトル部分*/
