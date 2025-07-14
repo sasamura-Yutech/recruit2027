@@ -1,5 +1,5 @@
 @charset "utf-8";
-
+html{scroll-behavior: smooth;}
 #top {
   height: 0;
   margin: 0;
@@ -146,7 +146,7 @@ hr {
     margin-bottom: 100px;
     display: none;
     background-color: #ffffff;
-    padding: 20px;
+    padding: 20px 25px;
     border-radius: 20px;
 }
 .mobile-linkcard-top p{
@@ -160,7 +160,7 @@ hr {
   overflow: hidden;
 }
 .mobile-link-topics a{
-  padding-left: 10%;
+  padding-left: 10px;
 }
 
 
@@ -186,6 +186,7 @@ hr {
     h4 {
         font-weight: lighter;
         margin-bottom: 3px;
+        color: #657ab4;
     }
 
     h2 {
@@ -234,7 +235,6 @@ hr {
 /* .topic に横線を設定 */
 .topic {
   border-top: 1px solid #8f8f8f;
-  padding: max(1.5vw, 20px) 0;
 }
 #topic1-2, #topic2-3{  border-bottom: 1px solid #8f8f8f;}
 
@@ -304,18 +304,22 @@ hr {
   border-right: 2.5px solid currentColor;
   transition: color 0.3s ease, border-color 0.3s ease;
 }
-
+.topic img{
+  width: 30px;
+  margin-right: 5px;
+  margin-left: 13px;
+}
 
 .topic a {
     display: block;
     width: 90%;
+    height: max(60px, 5vw);
   position: relative;
   display: inline-flex;
   align-items: center;
   transition: transform 0.3s ease-in-out;
   color: inherit;
   text-decoration: none;
-  padding-right: 2rem;
   font-size: max(16px,1.2vw);
 }
 
@@ -888,8 +892,20 @@ hr {
     }
 
     p {
-      font-size: 15px;
+      font-size: 10px;
     }
+  }
+
+  .topic a{
+    height: 75px;
+    img{
+      margin-right: 12px;
+      margin-left: 3px;
+    }
+  }
+
+  .topic a:after{
+    right: -10px;
   }
 
   /*ABOUTUS外タイトル部分*/

@@ -1,7 +1,7 @@
 /*#0c4469←ベースカラー*/
 
 @charset "utf-8";
-html{scroll-behavior: smooth;}
+
 
 #yutechhp{
   margin-left: 3px;
@@ -246,9 +246,14 @@ p.header-recruit{width: 10px;}
   width: max(20vw, 20rem);
   height: 100vh;
   background-color: #004879;/*←開いたメニューの背景色設定*/
-  translate: 100vw;
+  transform: translateX(105%);
+  transition: transform 0.4s ease;
   box-shadow: -4px 0px 3px 0px rgba(0, 0, 0, 0.7);
 
+}
+
+#menu-panel.open{
+  transform: translateX(0);
 }
 
 .menu-list li{
