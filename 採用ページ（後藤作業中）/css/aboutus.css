@@ -20,7 +20,7 @@
 
 /*設立*/
 .construction{
-    margin-bottom: 150px;
+    margin-bottom: min(3vh,60px);
     background-color: #c1cdd8;
     padding-top: 30px;
     padding-bottom: 50px;
