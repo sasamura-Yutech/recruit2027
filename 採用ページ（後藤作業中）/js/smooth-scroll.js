@@ -1,49 +1,21 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const header = document.querySelector('.header');
-  const headerHeight = header ? header.offsetHeight : 0;
+  window.addEventListener('DOMContentLoaded', () => {
+    const params = new URLSearchParams(window.location.search);
+    const targetId = params.get('scrollTo');
 
-  function scrollToWithOffset(targetSelector, duration = 600) {
-    const target = document.querySelector(targetSelector);
-    if (!target) return;
+    if (targetId) {
+      const maxAttempts = 20; // 最大試行回数
+      let attempts = 0;
 
-    const targetY = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
-    const startY = window.pageYOffset;
-    const distance = targetY - startY;
-    const startTime = performance.now();
+      const scrollToTarget = () => {
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        } else if (attempts < maxAttempts) {
+          attempts++;
+          requestAnimationFrame(scrollToTarget);
+        }
+      };
 
-    function easeInOutCubic(t) {
-      return t < 0.5
-        ? 4 * t * t * t
-        : 1 - Math.pow(-2 * t + 2, 3) / 2;
+      scrollToTarget(); // 試行スタート
     }
-
-    function animateScroll(currentTime) {
-      const elapsed = currentTime - startTime;
-      const progress = Math.min(elapsed / duration, 1);
-      const ease = easeInOutCubic(progress);
-
-      window.scrollTo(0, startY + distance * ease);
-
-      if (progress < 1) {
-        requestAnimationFrame(animateScroll);
-      }
-    }
-
-    requestAnimationFrame(animateScroll);
-  }
-
-  document.querySelectorAll('[data-scroll-to]').forEach(link => {
-    link.addEventListener('click', function (e) {
-      e.preventDefault(); // デフォルトの即移動を防ぐ
-      const targetSelector = this.getAttribute('data-scroll-to');
-      scrollToWithOffset(targetSelector, 700); // ← ここでスピードを調整できる（ミリ秒）
-    });
   });
-
-  // ページ読み込み後に location.hash がある場合も対応
-  if (location.hash) {
-    setTimeout(() => {
-      scrollToWithOffset(location.hash, 600);
-    }, 100); // ちょっと待ってからスクロール（画面レンダリングのため）
-  }
-});

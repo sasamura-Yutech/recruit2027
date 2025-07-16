@@ -20,6 +20,7 @@
   <!--ハンバーガーメニュー設定（JS)-->
   <script src="../js/toggle-menu.js" defer></script>
   <script src="../js/data.js" defer></script>
+  <script src="../js/smooth-scroll.js" defer></script>
   <link href="../css/common.css" rel="stylesheet">
   <link href="../css/data.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -27,18 +28,7 @@
 </head>
 
 <body>
-    <script>
-  window.addEventListener("load", function () {
-    if (window.location.hash) {
-      const target = document.querySelector(window.location.hash);
-      if (target) {
-        setTimeout(() => {
-          target.scrollIntoView({ behavior: "auto" }); // または "smooth"
-        }, 100);
-      }
-    }
-  });
-</script>
+
   <!--ここからheader-->
   <header class="header">
     <div class="header-inner">
@@ -530,19 +520,5 @@
 
   </footer>
   <!--ここまでfooter-->
-<script>
-  window.addEventListener('DOMContentLoaded', () => {
-    const params = new URLSearchParams(window.location.search);
-    const targetId = params.get('scrollTo');
 
-    if (targetId) {
-      setTimeout(() => {
-        const targetElement = document.getElementById(targetId);
-        if (targetElement) {
-          targetElement.scrollIntoView({ behavior: 'smooth' });
-        }
-      }, 400);
-    }
-  });
-</script>
 </html>
