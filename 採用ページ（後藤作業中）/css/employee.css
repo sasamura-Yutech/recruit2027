@@ -64,7 +64,7 @@ h2{
 }
 
 figcaption{
-  line-height: 1.6;
+  line-height: 1.7;
   letter-spacing: -1;
 }
 .tab-nav{
@@ -132,14 +132,14 @@ figcaption{
 .reason-figure{
   display: flex;
   margin: 0 50;
-  margin-bottom: 20px;
-  font-size: min(3vw,22px);
+  margin-bottom: 30px;
+  font-size: min(2.7vw,22px);
 }
 .discovery-figure{
   display: flex;
   margin: 0 50;
   margin-bottom: 20px;
-  font-size: min(3vw,22px);
+  font-size: min(2.7vw,22px);
 }
 .employee-list{
   display: block;
@@ -149,5 +149,5 @@ figcaption{
   font-weight: bold;
   background-color: rgb(211, 211, 211);
   padding: 20px;
-  font-size: min(3vw,18px);
+  font-size: min(2.7vw,18px);
 }
