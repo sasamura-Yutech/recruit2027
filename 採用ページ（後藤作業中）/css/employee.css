@@ -59,16 +59,12 @@ h2{
 }
 /* ここまでスキップボタン */
 .question{
-  font-size: min(3vw, 20px);
+  font-size: min(3.5vw, 24px);
   margin-bottom: 10px;
 }
 
-.question-2{
-  margin-top: 40px;
-}
-
 figcaption{
-  line-height: 1.8;
+  line-height: 1.6;
   letter-spacing: -1;
 }
 .tab-nav{
@@ -136,11 +132,13 @@ figcaption{
 .reason-figure{
   display: flex;
   margin: 0 50;
+  margin-bottom: 20px;
   font-size: min(3vw,22px);
 }
 .discovery-figure{
   display: flex;
   margin: 0 50;
+  margin-bottom: 20px;
   font-size: min(3vw,22px);
 }
 .employee-list{
