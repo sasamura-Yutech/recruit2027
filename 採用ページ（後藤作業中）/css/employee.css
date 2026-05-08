@@ -58,6 +58,14 @@ h2{
   }
 }
 /* ここまでスキップボタン */
+.question{
+  font-size: min(3vw, 20px);
+  margin-bottom: 10px;
+}
+
+.question-2{
+  margin-top: 40px;
+}
 
 figcaption{
   line-height: 1.8;
